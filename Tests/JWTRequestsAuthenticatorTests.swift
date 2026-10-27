@@ -1,6 +1,6 @@
 //
 //  JWTRequestsAuthenticatorTests.swift
-//  AppStoreConnect-Swift-SDK_Tests
+//  ASC_Tests
 //
 //  Created by Antoine van der Lee on 10/11/2018.
 //  Copyright © 2018 CocoaPods. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 import Crypto
-@testable import AppStoreConnect_Swift_SDK
+@testable import ASC
 import Foundation
 #if canImport(FoundationNetworking)
 import FoundationNetworking

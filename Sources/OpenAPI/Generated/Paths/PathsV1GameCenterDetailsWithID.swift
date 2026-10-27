@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterDetails {
 		/// Path: `/v1/gameCenterDetails/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterDetailResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterDetailResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterDetails_getInstance")
 		}
 
@@ -390,7 +390,7 @@ extension APIEndpoint.V1.GameCenterDetails {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterDetailUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterDetailResponse> {
+		public func patch(_ body: ASC.GameCenterDetailUpdateRequest) -> Request<ASC.GameCenterDetailResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterDetails_updateInstance")
 		}
 	}

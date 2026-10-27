@@ -14,7 +14,7 @@ extension APIEndpoint.V1.MarketplaceWebhooks {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.MarketplaceWebhookUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.MarketplaceWebhookResponse> {
+		public func patch(_ body: ASC.MarketplaceWebhookUpdateRequest) -> Request<ASC.MarketplaceWebhookResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "marketplaceWebhooks_updateInstance")
 		}
 

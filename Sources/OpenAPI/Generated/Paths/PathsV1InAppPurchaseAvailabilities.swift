@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/inAppPurchaseAvailabilities`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseAvailabilityCreateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAvailabilityResponse> {
+		public func post(_ body: ASC.InAppPurchaseAvailabilityCreateRequest) -> Request<ASC.InAppPurchaseAvailabilityResponse> {
 			Request(path: path, method: "POST", body: body, id: "inAppPurchaseAvailabilities_createInstance")
 		}
 	}

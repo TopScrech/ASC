@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppEncryptionDeclarations.WithID.Relationships {
 		/// Path: `/v1/appEncryptionDeclarations/{id}/relationships/appEncryptionDeclarationDocument`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse> {
+		public var get: Request<ASC.AppEncryptionDeclarationAppEncryptionDeclarationDocumentLinkageResponse> {
 			Request(path: path, method: "GET", id: "appEncryptionDeclarations_appEncryptionDeclarationDocument_getToOneRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCategories.WithID.Relationships {
 		/// Path: `/v1/appCategories/{id}/relationships/parent`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppCategoryParentLinkageResponse> {
+		public var get: Request<ASC.AppCategoryParentLinkageResponse> {
 			Request(path: path, method: "GET", id: "appCategories_parent_getToOneRelationship")
 		}
 	}

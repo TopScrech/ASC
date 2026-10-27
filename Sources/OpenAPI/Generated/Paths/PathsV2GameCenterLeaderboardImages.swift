@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/gameCenterLeaderboardImages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardImageV2CreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardImageV2Response> {
+		public func post(_ body: ASC.GameCenterLeaderboardImageV2CreateRequest) -> Request<ASC.GameCenterLeaderboardImageV2Response> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterLeaderboardImagesV2_createInstance")
 		}
 	}

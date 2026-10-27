@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/androidToIosAppMappingDetails`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AndroidToIosAppMappingDetailCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AndroidToIosAppMappingDetailResponse> {
+		public func post(_ body: ASC.AndroidToIosAppMappingDetailCreateRequest) -> Request<ASC.AndroidToIosAppMappingDetailResponse> {
 			Request(path: path, method: "POST", body: body, id: "androidToIosAppMappingDetails_createInstance")
 		}
 	}

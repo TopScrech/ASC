@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterChallengeVersions.WithID.Relationships {
 		/// Path: `/v1/gameCenterChallengeVersions/{id}/relationships/defaultImage`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.GameCenterChallengeVersionDefaultImageLinkageResponse> {
+		public var get: Request<ASC.GameCenterChallengeVersionDefaultImageLinkageResponse> {
 			Request(path: path, method: "GET", id: "gameCenterChallengeVersions_defaultImage_getToOneRelationship")
 		}
 	}

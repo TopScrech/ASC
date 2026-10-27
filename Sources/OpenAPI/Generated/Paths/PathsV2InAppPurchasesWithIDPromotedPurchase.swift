@@ -13,7 +13,7 @@ extension APIEndpoint.V2.InAppPurchases.WithID {
 		/// Path: `/v2/inAppPurchases/{id}/promotedPurchase`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.PromotedPurchaseResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.PromotedPurchaseResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchasesV2_promotedPurchase_getToOneRelated")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BackgroundAssetVersions.WithID {
 		/// Path: `/v1/backgroundAssetVersions/{id}/backgroundAssetUploadFiles`
 		public let path: String
 
-		public func get(fieldsBackgroundAssetUploadFiles: [FieldsBackgroundAssetUploadFiles]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetUploadFilesResponse> {
+		public func get(fieldsBackgroundAssetUploadFiles: [FieldsBackgroundAssetUploadFiles]? = nil, limit: Int? = nil) -> Request<ASC.BackgroundAssetUploadFilesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsBackgroundAssetUploadFiles, limit), id: "backgroundAssetVersions_backgroundAssetUploadFiles_getToManyRelated")
 		}
 

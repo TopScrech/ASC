@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/webhookPings`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.WebhookPingCreateRequest) -> Request<AppStoreConnect_Swift_SDK.WebhookPingResponse> {
+		public func post(_ body: ASC.WebhookPingCreateRequest) -> Request<ASC.WebhookPingResponse> {
 			Request(path: path, method: "POST", body: body, id: "webhookPings_createInstance")
 		}
 	}

@@ -14,7 +14,7 @@ extension APIEndpoint.V1 {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func post(_ body: AppStoreConnect_Swift_SDK.SubscriptionAvailabilityCreateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionAvailabilityResponse> {
+		public func post(_ body: ASC.SubscriptionAvailabilityCreateRequest) -> Request<ASC.SubscriptionAvailabilityResponse> {
 			Request(path: path, method: "POST", body: body, id: "subscriptionAvailabilities_createInstance")
 		}
 	}

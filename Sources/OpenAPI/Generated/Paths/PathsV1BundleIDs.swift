@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/bundleIds`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BundleIDsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BundleIDsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "bundleIds_getCollection")
 		}
 
@@ -184,7 +184,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BundleIDCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BundleIDResponse> {
+		public func post(_ body: ASC.BundleIDCreateRequest) -> Request<ASC.BundleIDResponse> {
 			Request(path: path, method: "POST", body: body, id: "bundleIds_createInstance")
 		}
 	}

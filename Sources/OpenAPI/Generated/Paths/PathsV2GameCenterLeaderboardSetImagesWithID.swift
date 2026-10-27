@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboardSetImages {
 		/// Path: `/v2/gameCenterLeaderboardSetImages/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetImageV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterLeaderboardSetImageV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterLeaderboardSetImagesV2_getInstance")
 		}
 
@@ -57,7 +57,7 @@ extension APIEndpoint.V2.GameCenterLeaderboardSetImages {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetImageV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetImageV2Response> {
+		public func patch(_ body: ASC.GameCenterLeaderboardSetImageV2UpdateRequest) -> Request<ASC.GameCenterLeaderboardSetImageV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardSetImagesV2_updateInstance")
 		}
 

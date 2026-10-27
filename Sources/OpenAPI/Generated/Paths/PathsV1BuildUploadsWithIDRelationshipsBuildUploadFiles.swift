@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildUploads.WithID.Relationships {
 		/// Path: `/v1/buildUploads/{id}/relationships/buildUploadFiles`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildUploadBuildUploadFilesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.BuildUploadBuildUploadFilesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "buildUploads_buildUploadFiles_getToManyRelationship")
 		}
 

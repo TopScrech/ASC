@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/backgroundAssetUploadFiles`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BackgroundAssetUploadFileCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetUploadFileResponse> {
+		public func post(_ body: ASC.BackgroundAssetUploadFileCreateRequest) -> Request<ASC.BackgroundAssetUploadFileResponse> {
 			Request(path: path, method: "POST", body: body, id: "backgroundAssetUploadFiles_createInstance")
 		}
 	}

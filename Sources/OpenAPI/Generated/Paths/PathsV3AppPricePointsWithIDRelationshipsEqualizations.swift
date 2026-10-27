@@ -13,7 +13,7 @@ extension APIEndpoint.V3.AppPricePoints.WithID.Relationships {
 		/// Path: `/v3/appPricePoints/{id}/relationships/equalizations`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPricePointV3EqualizationsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppPricePointV3EqualizationsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appPricePointsV3_equalizations_getToManyRelationship")
 		}
 

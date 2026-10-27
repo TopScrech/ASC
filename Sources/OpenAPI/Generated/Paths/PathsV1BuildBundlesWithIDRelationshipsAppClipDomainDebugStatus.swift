@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildBundles.WithID.Relationships {
 		/// Path: `/v1/buildBundles/{id}/relationships/appClipDomainDebugStatus`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BuildBundleAppClipDomainDebugStatusLinkageResponse> {
+		public var get: Request<ASC.BuildBundleAppClipDomainDebugStatusLinkageResponse> {
 			Request(path: path, method: "GET", id: "buildBundles_appClipDomainDebugStatus_getToOneRelationship")
 		}
 	}

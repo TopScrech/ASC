@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCategories.WithID.Relationships {
 		/// Path: `/v1/appCategories/{id}/relationships/subcategories`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCategorySubcategoriesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppCategorySubcategoriesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appCategories_subcategories_getToManyRelationship")
 		}
 

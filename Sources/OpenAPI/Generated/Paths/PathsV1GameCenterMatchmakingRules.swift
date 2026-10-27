@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/gameCenterMatchmakingRules`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterMatchmakingRuleCreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterMatchmakingRuleResponse> {
+		public func post(_ body: ASC.GameCenterMatchmakingRuleCreateRequest) -> Request<ASC.GameCenterMatchmakingRuleResponse> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterMatchmakingRules_createInstance")
 		}
 	}

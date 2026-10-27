@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionVersions.WithID.Relationships {
 		/// Path: `/v1/subscriptionVersions/{id}/relationships/image`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.SubscriptionVersionImageLinkageResponse> {
+		public var get: Request<ASC.SubscriptionVersionImageLinkageResponse> {
 			Request(path: path, method: "GET", id: "subscriptionVersions_image_getToOneRelationship")
 		}
 	}

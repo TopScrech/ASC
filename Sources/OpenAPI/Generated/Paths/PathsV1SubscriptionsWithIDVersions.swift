@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Subscriptions.WithID {
 		/// Path: `/v1/subscriptions/{id}/versions`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionVersionsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionVersionsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptions_versions_getToManyRelated")
 		}
 

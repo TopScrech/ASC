@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/backgroundAssetVersions`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BackgroundAssetVersionCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetVersionResponse> {
+		public func post(_ body: ASC.BackgroundAssetVersionCreateRequest) -> Request<ASC.BackgroundAssetVersionResponse> {
 			Request(path: path, method: "POST", body: body, id: "backgroundAssetVersions_createInstance")
 		}
 	}

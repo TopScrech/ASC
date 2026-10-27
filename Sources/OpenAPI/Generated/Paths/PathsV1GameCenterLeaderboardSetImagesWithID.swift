@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterLeaderboardSetImages {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetImageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterLeaderboardSetImageResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterLeaderboardSetImages_getInstance")
 		}
 
@@ -59,7 +59,7 @@ extension APIEndpoint.V1.GameCenterLeaderboardSetImages {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetImageResponse> {
+		public func patch(_ body: ASC.GameCenterLeaderboardSetImageUpdateRequest) -> Request<ASC.GameCenterLeaderboardSetImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardSetImages_updateInstance")
 		}
 

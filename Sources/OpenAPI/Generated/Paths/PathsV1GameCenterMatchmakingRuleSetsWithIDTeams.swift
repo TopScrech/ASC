@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterMatchmakingRuleSets.WithID {
 		/// Path: `/v1/gameCenterMatchmakingRuleSets/{id}/teams`
 		public let path: String
 
-		public func get(fieldsGameCenterMatchmakingTeams: [FieldsGameCenterMatchmakingTeams]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterMatchmakingTeamsResponse> {
+		public func get(fieldsGameCenterMatchmakingTeams: [FieldsGameCenterMatchmakingTeams]? = nil, limit: Int? = nil) -> Request<ASC.GameCenterMatchmakingTeamsResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsGameCenterMatchmakingTeams, limit), id: "gameCenterMatchmakingRuleSets_teams_getToManyRelated")
 		}
 

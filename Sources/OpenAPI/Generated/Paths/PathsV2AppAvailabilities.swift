@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/appAvailabilities`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppAvailabilityV2CreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppAvailabilityV2Response> {
+		public func post(_ body: ASC.AppAvailabilityV2CreateRequest) -> Request<ASC.AppAvailabilityV2Response> {
 			Request(path: path, method: "POST", body: body, id: "appAvailabilitiesV2_createInstance")
 		}
 	}

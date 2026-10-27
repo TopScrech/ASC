@@ -14,7 +14,7 @@ extension APIEndpoint.V1.AppStoreVersions.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public var get: Request<AppStoreConnect_Swift_SDK.AppStoreVersionAppStoreVersionSubmissionLinkageResponse> {
+		public var get: Request<ASC.AppStoreVersionAppStoreVersionSubmissionLinkageResponse> {
 			Request(path: path, method: "GET", id: "appStoreVersions_appStoreVersionSubmission_getToOneRelationship")
 		}
 	}

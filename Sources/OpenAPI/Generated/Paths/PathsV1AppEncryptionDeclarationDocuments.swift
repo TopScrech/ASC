@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appEncryptionDeclarationDocuments`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppEncryptionDeclarationDocumentCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationDocumentResponse> {
+		public func post(_ body: ASC.AppEncryptionDeclarationDocumentCreateRequest) -> Request<ASC.AppEncryptionDeclarationDocumentResponse> {
 			Request(path: path, method: "POST", body: body, id: "appEncryptionDeclarationDocuments_createInstance")
 		}
 	}

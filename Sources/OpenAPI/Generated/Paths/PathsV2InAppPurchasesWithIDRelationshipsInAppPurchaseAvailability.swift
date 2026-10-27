@@ -13,7 +13,7 @@ extension APIEndpoint.V2.InAppPurchases.WithID.Relationships {
 		/// Path: `/v2/inAppPurchases/{id}/relationships/inAppPurchaseAvailability`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.InAppPurchaseV2InAppPurchaseAvailabilityLinkageResponse> {
+		public var get: Request<ASC.InAppPurchaseV2InAppPurchaseAvailabilityLinkageResponse> {
 			Request(path: path, method: "GET", id: "inAppPurchasesV2_inAppPurchaseAvailability_getToOneRelationship")
 		}
 	}

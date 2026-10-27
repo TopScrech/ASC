@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboards.WithID {
 		/// Path: `/v2/gameCenterLeaderboards/{id}/gameCenterScoreModerations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterScoreModerationsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterScoreModerationsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterLeaderboardsV2_gameCenterScoreModerations_getToManyRelated")
 		}
 

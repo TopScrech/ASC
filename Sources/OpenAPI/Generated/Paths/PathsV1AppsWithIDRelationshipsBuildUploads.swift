@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/buildUploads`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppBuildUploadsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppBuildUploadsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "apps_buildUploads_getToManyRelationship")
 		}
 

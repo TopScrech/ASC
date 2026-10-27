@@ -13,7 +13,7 @@ extension APIEndpoint.V1.UserInvitations {
 		/// Path: `/v1/userInvitations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.UserInvitationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.UserInvitationResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "userInvitations_getInstance")
 		}
 

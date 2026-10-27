@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionVersions.WithID {
 		/// Path: `/v1/subscriptionVersions/{id}/image`
 		public let path: String
 
-		public func get(fieldsSubscriptionImages: [FieldsSubscriptionImages]? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionImageV2Response> {
+		public func get(fieldsSubscriptionImages: [FieldsSubscriptionImages]? = nil) -> Request<ASC.SubscriptionImageV2Response> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsSubscriptionImages), id: "subscriptionVersions_image_getToOneRelated")
 		}
 

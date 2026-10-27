@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseOfferCodeOneTimeUseCodes {
 		/// Path: `/v1/inAppPurchaseOfferCodeOneTimeUseCodes/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeOneTimeUseCodeResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseOfferCodeOneTimeUseCodeResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseOfferCodeOneTimeUseCodes_getInstance")
 		}
 
@@ -61,7 +61,7 @@ extension APIEndpoint.V1.InAppPurchaseOfferCodeOneTimeUseCodes {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeOneTimeUseCodeResponse> {
+		public func patch(_ body: ASC.InAppPurchaseOfferCodeOneTimeUseCodeUpdateRequest) -> Request<ASC.InAppPurchaseOfferCodeOneTimeUseCodeResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "inAppPurchaseOfferCodeOneTimeUseCodes_updateInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipDefaultExperiences.WithID {
 		/// Path: `/v1/appClipDefaultExperiences/{id}/releaseWithAppStoreVersion`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreVersionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appClipDefaultExperiences_releaseWithAppStoreVersion_getToOneRelated")
 		}
 

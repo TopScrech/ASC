@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipDefaultExperiences.WithID.Relationships {
 		/// Path: `/v1/appClipDefaultExperiences/{id}/relationships/appClipAppStoreReviewDetail`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse> {
+		public var get: Request<ASC.AppClipDefaultExperienceAppClipAppStoreReviewDetailLinkageResponse> {
 			Request(path: path, method: "GET", id: "appClipDefaultExperiences_appClipAppStoreReviewDetail_getToOneRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/inAppPurchaseImages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseImageV2CreateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseImageV2Response> {
+		public func post(_ body: ASC.InAppPurchaseImageV2CreateRequest) -> Request<ASC.InAppPurchaseImageV2Response> {
 			Request(path: path, method: "POST", body: body, id: "inAppPurchaseImagesV2_createInstance")
 		}
 	}

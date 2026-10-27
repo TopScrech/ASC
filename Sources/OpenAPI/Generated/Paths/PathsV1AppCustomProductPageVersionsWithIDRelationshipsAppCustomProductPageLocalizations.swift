@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCustomProductPageVersions.WithID.Relationships {
 		/// Path: `/v1/appCustomProductPageVersions/{id}/relationships/appCustomProductPageLocalizations`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppCustomProductPageVersionAppCustomProductPageLocalizationsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appCustomProductPageVersions_appCustomProductPageLocalizations_getToManyRelationship")
 		}
 

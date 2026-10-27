@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaGroups.WithID {
 		/// Path: `/v1/betaGroups/{id}/betaRecruitmentCriteria`
 		public let path: String
 
-		public func get(fieldsBetaRecruitmentCriteria: [FieldsBetaRecruitmentCriteria]? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaRecruitmentCriterionResponse> {
+		public func get(fieldsBetaRecruitmentCriteria: [FieldsBetaRecruitmentCriteria]? = nil) -> Request<ASC.BetaRecruitmentCriterionResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsBetaRecruitmentCriteria), id: "betaGroups_betaRecruitmentCriteria_getToOneRelated")
 		}
 

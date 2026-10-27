@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BackgroundAssets.WithID {
 		/// Path: `/v1/backgroundAssets/{id}/versions`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetVersionsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BackgroundAssetVersionsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "backgroundAssets_versions_getToManyRelated")
 		}
 

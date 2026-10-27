@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterChallenges.WithID.Relationships {
 		/// Path: `/v1/gameCenterChallenges/{id}/relationships/versions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterChallengeVersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterChallengeVersionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterChallenges_versions_getToManyRelationship")
 		}
 

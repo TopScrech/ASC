@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionPricePoints.WithID {
 		/// Path: `/v1/subscriptionPricePoints/{id}/adjustedEqualizations`
 		public let path: String
 
-		public func get(parameters: GetParameters) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPricePointsResponse> {
+		public func get(parameters: GetParameters) -> Request<ASC.SubscriptionPricePointsResponse> {
 			Request(path: path, method: "GET", query: parameters.asQuery, id: "subscriptionPricePoints_adjustedEqualizations_getToManyRelated")
 		}
 

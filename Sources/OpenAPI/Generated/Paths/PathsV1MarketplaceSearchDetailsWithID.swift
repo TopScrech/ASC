@@ -13,7 +13,7 @@ extension APIEndpoint.V1.MarketplaceSearchDetails {
 		/// Path: `/v1/marketplaceSearchDetails/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.MarketplaceSearchDetailUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.MarketplaceSearchDetailResponse> {
+		public func patch(_ body: ASC.MarketplaceSearchDetailUpdateRequest) -> Request<ASC.MarketplaceSearchDetailResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "marketplaceSearchDetails_updateInstance")
 		}
 

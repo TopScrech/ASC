@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersionPhasedReleases {
 		/// Path: `/v1/appStoreVersionPhasedReleases/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionPhasedReleaseUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionPhasedReleaseResponse> {
+		public func patch(_ body: ASC.AppStoreVersionPhasedReleaseUpdateRequest) -> Request<ASC.AppStoreVersionPhasedReleaseResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appStoreVersionPhasedReleases_updateInstance")
 		}
 

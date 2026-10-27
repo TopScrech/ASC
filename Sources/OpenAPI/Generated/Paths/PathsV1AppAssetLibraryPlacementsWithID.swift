@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppAssetLibraryPlacements {
 		/// Path: `/v1/appAssetLibraryPlacements/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryPlacementResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppAssetLibraryPlacementResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appAssetLibraryPlacements_getInstance")
 		}
 

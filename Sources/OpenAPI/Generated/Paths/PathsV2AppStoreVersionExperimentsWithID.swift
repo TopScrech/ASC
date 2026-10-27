@@ -13,7 +13,7 @@ extension APIEndpoint.V2.AppStoreVersionExperiments {
 		/// Path: `/v2/appStoreVersionExperiments/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreVersionExperimentV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersionExperimentsV2_getInstance")
 		}
 
@@ -167,7 +167,7 @@ extension APIEndpoint.V2.AppStoreVersionExperiments {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionExperimentV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentV2Response> {
+		public func patch(_ body: ASC.AppStoreVersionExperimentV2UpdateRequest) -> Request<ASC.AppStoreVersionExperimentV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "appStoreVersionExperimentsV2_updateInstance")
 		}
 

@@ -36,6 +36,18 @@ public enum GeneratedPatcher {
     public static func patchGeneratedSources(atRoot rootDir: URL, dryRun: Bool = false) throws -> GeneratedPatchReport {
         var report = GeneratedPatchReport()
 
+        for file in ["ErrorResponse", "ResponseError", "ErrorLinks", "ErrorSourcePointer", "ErrorSourceParameter"] {
+            try patchFile(
+                rootDir.appendingPathComponent("Entities/\(file).swift"),
+                dryRun: dryRun,
+                replacements: [
+                    .init(description: "Make error values Sendable", from: ": Codable {", to: ": Codable, Sendable {", required: false),
+                    .init(description: "Make identifiable error values Sendable", from: ": Codable, Identifiable {", to: ": Codable, Sendable, Identifiable {", required: false)
+                ],
+                report: &report
+            )
+        }
+
         try patchFile(
             rootDir.appendingPathComponent("Entities/AgeRatingDeclarationUpdateRequest.swift"),
             dryRun: dryRun,

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCustomProductPageLocalizations.WithID {
 		/// Path: `/v1/appCustomProductPageLocalizations/{id}/searchKeywords`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppKeywordsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppKeywordsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appCustomProductPageLocalizations_searchKeywords_getToManyRelated")
 		}
 

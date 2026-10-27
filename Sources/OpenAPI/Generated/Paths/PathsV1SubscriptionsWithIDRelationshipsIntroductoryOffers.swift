@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Subscriptions.WithID.Relationships {
 		/// Path: `/v1/subscriptions/{id}/relationships/introductoryOffers`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionIntroductoryOffersLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.SubscriptionIntroductoryOffersLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "subscriptions_introductoryOffers_getToManyRelationship")
 		}
 
@@ -23,7 +23,7 @@ extension APIEndpoint.V1.Subscriptions.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.SubscriptionIntroductoryOffersLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.SubscriptionIntroductoryOffersLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "subscriptions_introductoryOffers_deleteToManyRelationship")
 		}
 	}

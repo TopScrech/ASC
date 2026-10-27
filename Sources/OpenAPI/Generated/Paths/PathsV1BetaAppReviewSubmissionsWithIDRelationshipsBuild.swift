@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaAppReviewSubmissions.WithID.Relationships {
 		/// Path: `/v1/betaAppReviewSubmissions/{id}/relationships/build`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BetaAppReviewSubmissionBuildLinkageResponse> {
+		public var get: Request<ASC.BetaAppReviewSubmissionBuildLinkageResponse> {
 			Request(path: path, method: "GET", id: "betaAppReviewSubmissions_build_getToOneRelationship")
 		}
 	}

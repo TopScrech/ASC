@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionOfferCodes {
 		/// Path: `/v1/subscriptionOfferCodes/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionOfferCodeResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionOfferCodeResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptionOfferCodes_getInstance")
 		}
 
@@ -131,7 +131,7 @@ extension APIEndpoint.V1.SubscriptionOfferCodes {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionOfferCodeUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionOfferCodeResponse> {
+		public func patch(_ body: ASC.SubscriptionOfferCodeUpdateRequest) -> Request<ASC.SubscriptionOfferCodeResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionOfferCodes_updateInstance")
 		}
 	}

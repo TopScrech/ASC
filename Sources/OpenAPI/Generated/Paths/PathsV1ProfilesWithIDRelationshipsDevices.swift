@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Profiles.WithID.Relationships {
 		/// Path: `/v1/profiles/{id}/relationships/devices`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.ProfileDevicesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.ProfileDevicesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "profiles_devices_getToManyRelationship")
 		}
 

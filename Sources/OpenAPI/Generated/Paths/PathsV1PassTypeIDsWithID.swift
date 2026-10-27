@@ -13,7 +13,7 @@ extension APIEndpoint.V1.PassTypeIDs {
 		/// Path: `/v1/passTypeIds/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.PassTypeIDResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.PassTypeIDResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "passTypeIds_getInstance")
 		}
 
@@ -62,7 +62,7 @@ extension APIEndpoint.V1.PassTypeIDs {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.PassTypeIDUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.PassTypeIDResponse> {
+		public func patch(_ body: ASC.PassTypeIDUpdateRequest) -> Request<ASC.PassTypeIDResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "passTypeIds_updateInstance")
 		}
 

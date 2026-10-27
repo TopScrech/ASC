@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboardSets.WithID.Relationships {
 		/// Path: `/v2/gameCenterLeaderboardSets/{id}/relationships/gameCenterLeaderboards`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterLeaderboardSetsV2_gameCenterLeaderboards_getToManyRelationship")
 		}
 
@@ -23,15 +23,15 @@ extension APIEndpoint.V2.GameCenterLeaderboardSets.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: ASC.GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterLeaderboardSetsV2_gameCenterLeaderboards_createToManyRelationship")
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardSetsV2_gameCenterLeaderboards_replaceToManyRelationship")
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.GameCenterLeaderboardSetV2GameCenterLeaderboardsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "gameCenterLeaderboardSetsV2_gameCenterLeaderboards_deleteToManyRelationship")
 		}
 	}

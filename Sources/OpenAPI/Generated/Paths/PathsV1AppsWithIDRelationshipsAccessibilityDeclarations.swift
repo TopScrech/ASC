@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/accessibilityDeclarations`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAccessibilityDeclarationsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppAccessibilityDeclarationsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "apps_accessibilityDeclarations_getToManyRelationship")
 		}
 

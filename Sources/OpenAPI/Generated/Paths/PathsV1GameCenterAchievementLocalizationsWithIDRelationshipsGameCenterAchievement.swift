@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterAchievementLocalizations.WithID.Relationships
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public var get: Request<AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse> {
+		public var get: Request<ASC.GameCenterAchievementLocalizationGameCenterAchievementLinkageResponse> {
 			Request(path: path, method: "GET", id: "gameCenterAchievementLocalizations_gameCenterAchievement_getToOneRelationship")
 		}
 	}

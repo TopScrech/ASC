@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BundleIDs.WithID {
 		/// Path: `/v1/bundleIds/{id}/app`
 		public let path: String
 
-		public func get(fieldsApps: [FieldsApps]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppWithoutIncludesResponse> {
+		public func get(fieldsApps: [FieldsApps]? = nil) -> Request<ASC.AppWithoutIncludesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsApps), id: "bundleIds_app_getToOneRelated")
 		}
 

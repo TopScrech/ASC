@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AlternativeDistributionPackageVersions.WithID.Relations
 		/// Path: `/v1/alternativeDistributionPackageVersions/{id}/relationships/deltas`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionPackageVersionDeltasLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AlternativeDistributionPackageVersionDeltasLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "alternativeDistributionPackageVersions_deltas_getToManyRelationship")
 		}
 

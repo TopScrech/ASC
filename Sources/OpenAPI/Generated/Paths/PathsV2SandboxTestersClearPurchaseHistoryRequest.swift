@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/sandboxTestersClearPurchaseHistoryRequest`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.SandboxTestersClearPurchaseHistoryRequestV2CreateRequest) -> Request<AppStoreConnect_Swift_SDK.SandboxTestersClearPurchaseHistoryRequestV2Response> {
+		public func post(_ body: ASC.SandboxTestersClearPurchaseHistoryRequestV2CreateRequest) -> Request<ASC.SandboxTestersClearPurchaseHistoryRequestV2Response> {
 			Request(path: path, method: "POST", body: body, id: "sandboxTestersClearPurchaseHistoryRequestV2_createInstance")
 		}
 	}

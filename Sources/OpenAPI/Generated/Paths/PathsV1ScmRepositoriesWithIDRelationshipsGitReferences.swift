@@ -13,7 +13,7 @@ extension APIEndpoint.V1.ScmRepositories.WithID.Relationships {
 		/// Path: `/v1/scmRepositories/{id}/relationships/gitReferences`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmRepositoryGitReferencesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.ScmRepositoryGitReferencesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "scmRepositories_gitReferences_getToManyRelationship")
 		}
 

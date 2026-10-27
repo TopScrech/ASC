@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiMacOsVersions.WithID {
 		/// Path: `/v1/ciMacOsVersions/{id}/xcodeVersions`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CiXcodeVersionsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.CiXcodeVersionsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "ciMacOsVersions_xcodeVersions_getToManyRelated")
 		}
 

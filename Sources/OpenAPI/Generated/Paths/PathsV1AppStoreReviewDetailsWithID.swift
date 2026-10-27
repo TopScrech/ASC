@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreReviewDetails {
 		/// Path: `/v1/appStoreReviewDetails/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreReviewDetailResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreReviewDetailResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreReviewDetails_getInstance")
 		}
 
@@ -97,7 +97,7 @@ extension APIEndpoint.V1.AppStoreReviewDetails {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppStoreReviewDetailUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreReviewDetailResponse> {
+		public func patch(_ body: ASC.AppStoreReviewDetailUpdateRequest) -> Request<ASC.AppStoreReviewDetailResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appStoreReviewDetails_updateInstance")
 		}
 	}

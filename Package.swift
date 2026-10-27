@@ -1,12 +1,21 @@
-// swift-tools-version:5.7
+// swift-tools-version:6.4
 import PackageDescription
 
 var dependencies: [Package.Dependency] = [
-    .package(url: "https://github.com/CreateAPI/URLQueryEncoder.git", from: "0.2.0"),
-    .package(url: "https://github.com/apple/swift-crypto.git", from: "3.12.3"),
-    .package(url: "https://github.com/apple/swift-argument-parser", from: "1.7.0"),
+    // https://github.com/CreateAPI/URLQueryEncoder
+    .package(url: "https://github.com/CreateAPI/URLQueryEncoder", from: "0.2.1"),
+
+    // https://github.com/apple/swift-crypto
+    .package(url: "https://github.com/apple/swift-crypto", from: "5.0.3"),
+
+    // https://github.com/apple/swift-argument-parser
+    .package(url: "https://github.com/apple/swift-argument-parser", from: "1.8.2"),
+
+    // https://github.com/weichsel/ZIPFoundation
     .package(url: "https://github.com/weichsel/ZIPFoundation", from: "0.9.20"),
-    .package(url: "https://github.com/apple/swift-collections.git", .upToNextMinor(from: "1.1.0"))
+
+    // https://github.com/apple/swift-collections
+    .package(url: "https://github.com/apple/swift-collections", from: "1.7.5")
 ]
 
 var targetDependencies: [Target.Dependency] = [
@@ -20,41 +29,40 @@ targetDependencies.append(.product(name: "OpenCombine", package: "OpenCombine"))
 #endif
 
 let package = Package(
-    name: "AppStoreConnect-Swift-SDK",
+    name: "ASC",
     platforms: [
-        .iOS(.v14),
-        .macOS(.v11),
-        .tvOS(.v14),
-        .watchOS(.v9),
+        .iOS(.v15),
+        .macOS(.v12),
+        .tvOS(.v15),
+        .watchOS(.v9)
     ],
     products: [
-        .library(name: "AppStoreConnect-Swift-SDK", targets: ["AppStoreConnect-Swift-SDK"])
+        .library(name: "ASC", targets: ["ASC"])
     ],
     dependencies: dependencies,
     targets: [
         .testTarget(
-            name: "AppStoreConnect-Swift-SDK-Tests",
+            name: "ASC-Tests",
             dependencies: [
-                "AppStoreConnect-Swift-SDK",
-                .target(name: "OpenAPIGeneratorCore", condition: .when(platforms: [.macOS])),
+                "ASC",
+                .target(name: "OpenAPIGeneratorCore", condition: .when(platforms: [.macOS]))
             ],
             path: "Tests"
         ),
         .target(
-            name: "AppStoreConnect-Swift-SDK",
+            name: "ASC",
             dependencies: targetDependencies,
             path: "Sources",
             exclude: [
                 "OpenAPI/app_store_connect_api.json",
-                "OpenAPI/app_store_connect_api.json.orig",
-                "OpenAPI/create-api.yml",
+                "OpenAPI/create-api.yml"
             ]
         ),
         .target(
             name: "OpenAPIGeneratorCore",
             dependencies: [
                 .product(name: "ZIPFoundation", package: "ZIPFoundation"),
-                .product(name: "OrderedCollections", package: "swift-collections"),
+                .product(name: "OrderedCollections", package: "swift-collections")
             ],
             path: "Tools/OpenAPIGeneratorCore"
         ),
@@ -62,7 +70,7 @@ let package = Package(
             name: "OpenAPIGenerator",
             dependencies: [
                 "OpenAPIGeneratorCore",
-                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                .product(name: "ArgumentParser", package: "swift-argument-parser")
             ],
             path: "Tools/OpenAPIGenerator"
         ),
@@ -86,5 +94,6 @@ let package = Package(
                 .target(name: "create-api")
             ]
         )
-    ]
+    ],
+    swiftLanguageModes: [.v6]
 )

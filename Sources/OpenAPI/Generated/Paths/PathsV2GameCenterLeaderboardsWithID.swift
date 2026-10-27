@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboards {
 		/// Path: `/v2/gameCenterLeaderboards/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterLeaderboardV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterLeaderboardsV2_getInstance")
 		}
 
@@ -177,7 +177,7 @@ extension APIEndpoint.V2.GameCenterLeaderboards {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardV2Response> {
+		public func patch(_ body: ASC.GameCenterLeaderboardV2UpdateRequest) -> Request<ASC.GameCenterLeaderboardV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardsV2_updateInstance")
 		}
 

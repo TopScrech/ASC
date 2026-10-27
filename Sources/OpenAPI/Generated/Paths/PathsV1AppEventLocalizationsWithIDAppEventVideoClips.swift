@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppEventLocalizations.WithID {
 		/// Path: `/v1/appEventLocalizations/{id}/appEventVideoClips`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventVideoClipsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppEventVideoClipsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appEventLocalizations_appEventVideoClips_getToManyRelated")
 		}
 

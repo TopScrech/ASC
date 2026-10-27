@@ -13,7 +13,7 @@ extension APIEndpoint.V2.SubscriptionGroupLocalizations {
 		/// Path: `/v2/subscriptionGroupLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGroupLocalizationV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionGroupLocalizationV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptionGroupLocalizationsV2_getInstance")
 		}
 
@@ -55,7 +55,7 @@ extension APIEndpoint.V2.SubscriptionGroupLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionGroupLocalizationV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGroupLocalizationV2Response> {
+		public func patch(_ body: ASC.SubscriptionGroupLocalizationV2UpdateRequest) -> Request<ASC.SubscriptionGroupLocalizationV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionGroupLocalizationsV2_updateInstance")
 		}
 

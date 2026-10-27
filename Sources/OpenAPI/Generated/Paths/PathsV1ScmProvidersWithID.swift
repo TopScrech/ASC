@@ -13,7 +13,7 @@ extension APIEndpoint.V1.ScmProviders {
 		/// Path: `/v1/scmProviders/{id}`
 		public let path: String
 
-		public func get(fieldsScmProviders: [FieldsScmProviders]? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmProviderResponse> {
+		public func get(fieldsScmProviders: [FieldsScmProviders]? = nil) -> Request<ASC.ScmProviderResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsScmProviders), id: "scmProviders_getInstance")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiProducts.WithID {
 		/// Path: `/v1/ciProducts/{id}/buildRuns`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CiBuildRunsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.CiBuildRunsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "ciProducts_buildRuns_getToManyRelated")
 		}
 

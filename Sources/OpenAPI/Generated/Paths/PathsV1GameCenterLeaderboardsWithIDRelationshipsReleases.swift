@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterLeaderboards.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardReleasesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterLeaderboardReleasesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterLeaderboards_releases_getToManyRelationship")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterDetails.WithID.Relationships {
 		/// Path: `/v1/gameCenterDetails/{id}/relationships/challengesMinimumPlatformVersions`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.GameCenterDetailChallengesMinimumPlatformVersionsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterDetails_challengesMinimumPlatformVersions_replaceToManyRelationship")
 		}
 	}

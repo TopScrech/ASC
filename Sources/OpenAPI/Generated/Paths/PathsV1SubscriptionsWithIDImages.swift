@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Subscriptions.WithID {
 		/// Path: `/v1/subscriptions/{id}/images`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionImagesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionImagesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptions_images_getToManyRelated")
 		}
 

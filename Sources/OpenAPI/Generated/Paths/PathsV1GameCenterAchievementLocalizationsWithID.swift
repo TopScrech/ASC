@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterAchievementLocalizations {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterAchievementLocalizationResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAchievementLocalizations_getInstance")
 		}
 
@@ -81,7 +81,7 @@ extension APIEndpoint.V1.GameCenterAchievementLocalizations {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationResponse> {
+		public func patch(_ body: ASC.GameCenterAchievementLocalizationUpdateRequest) -> Request<ASC.GameCenterAchievementLocalizationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterAchievementLocalizations_updateInstance")
 		}
 

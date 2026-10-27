@@ -1,7 +1,7 @@
 # Different components that CreateAPI should generate.
 generate: [entities, paths, enums]
 # The name of the module that the generated sources will be part of.
-module: "AppStoreConnect_Swift_SDK"
+module: "ASC"
 # Access level modifier for all generated declarations
 access: public
 # Add @available(*, deprecated) attribute to deprecated types and properties

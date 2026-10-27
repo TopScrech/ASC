@@ -13,7 +13,7 @@ extension APIEndpoint.V1.EndUserLicenseAgreements {
 		/// Path: `/v1/endUserLicenseAgreements/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.EndUserLicenseAgreementResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.EndUserLicenseAgreementResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "endUserLicenseAgreements_getInstance")
 		}
 
@@ -118,7 +118,7 @@ extension APIEndpoint.V1.EndUserLicenseAgreements {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.EndUserLicenseAgreementUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.EndUserLicenseAgreementResponse> {
+		public func patch(_ body: ASC.EndUserLicenseAgreementUpdateRequest) -> Request<ASC.EndUserLicenseAgreementResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "endUserLicenseAgreements_updateInstance")
 		}
 

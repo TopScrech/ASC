@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboardSets.WithID.Relationships {
 		/// Path: `/v2/gameCenterLeaderboardSets/{id}/relationships/versions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetV2VersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterLeaderboardSetV2VersionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterLeaderboardSetsV2_versions_getToManyRelationship")
 		}
 

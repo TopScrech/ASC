@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCustomProductPageVersions {
 		/// Path: `/v1/appCustomProductPageVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppCustomProductPageVersionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appCustomProductPageVersions_getInstance")
 		}
 
@@ -74,7 +74,7 @@ extension APIEndpoint.V1.AppCustomProductPageVersions {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppCustomProductPageVersionUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageVersionResponse> {
+		public func patch(_ body: ASC.AppCustomProductPageVersionUpdateRequest) -> Request<ASC.AppCustomProductPageVersionResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appCustomProductPageVersions_updateInstance")
 		}
 	}

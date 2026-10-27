@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appAssetLibraryVideos`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppAssetLibraryVideoCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryVideoResponse> {
+		public func post(_ body: ASC.AppAssetLibraryVideoCreateRequest) -> Request<ASC.AppAssetLibraryVideoResponse> {
 			Request(path: path, method: "POST", body: body, id: "appAssetLibraryVideos_createInstance")
 		}
 	}

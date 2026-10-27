@@ -13,7 +13,7 @@ extension APIEndpoint.V3.AppPricePoints.WithID {
 		/// Path: `/v3/appPricePoints/{id}/equalizations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPricePointsV3Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppPricePointsV3Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appPricePointsV3_equalizations_getToManyRelated")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseVersions.WithID.Relationships {
 		/// Path: `/v1/inAppPurchaseVersions/{id}/relationships/localizations`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseVersionLocalizationsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.InAppPurchaseVersionLocalizationsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "inAppPurchaseVersions_localizations_getToManyRelationship")
 		}
 

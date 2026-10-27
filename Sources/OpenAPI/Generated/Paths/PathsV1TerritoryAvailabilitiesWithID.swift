@@ -13,7 +13,7 @@ extension APIEndpoint.V1.TerritoryAvailabilities {
 		/// Path: `/v1/territoryAvailabilities/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.TerritoryAvailabilityUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.TerritoryAvailabilityResponse> {
+		public func patch(_ body: ASC.TerritoryAvailabilityUpdateRequest) -> Request<ASC.TerritoryAvailabilityResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "territoryAvailabilities_updateInstance")
 		}
 	}

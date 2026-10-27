@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterAchievementLocalizations.WithID.Relationships
 		/// Path: `/v2/gameCenterAchievementLocalizations/{id}/relationships/image`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationV2ImageLinkageResponse> {
+		public var get: Request<ASC.GameCenterAchievementLocalizationV2ImageLinkageResponse> {
 			Request(path: path, method: "GET", id: "gameCenterAchievementLocalizationsV2_image_getToOneRelationship")
 		}
 	}

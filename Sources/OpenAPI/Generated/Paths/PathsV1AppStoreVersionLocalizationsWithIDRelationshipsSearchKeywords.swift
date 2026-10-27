@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersionLocalizations.WithID.Relationships {
 		/// Path: `/v1/appStoreVersionLocalizations/{id}/relationships/searchKeywords`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationSearchKeywordsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppStoreVersionLocalizationSearchKeywordsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appStoreVersionLocalizations_searchKeywords_getToManyRelationship")
 		}
 
@@ -23,11 +23,11 @@ extension APIEndpoint.V1.AppStoreVersionLocalizations.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationSearchKeywordsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: ASC.AppStoreVersionLocalizationSearchKeywordsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "POST", body: body, id: "appStoreVersionLocalizations_searchKeywords_createToManyRelationship")
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationSearchKeywordsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.AppStoreVersionLocalizationSearchKeywordsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "appStoreVersionLocalizations_searchKeywords_deleteToManyRelationship")
 		}
 	}

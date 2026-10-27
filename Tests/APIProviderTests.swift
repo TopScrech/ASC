@@ -1,12 +1,12 @@
 //
 //  APIProviderTests.swift
-//  AppStoreConnect-Swift-SDK
+//  ASC
 //
 //  Created by Michael Schwarz on 07.03.19.
 //
 
 import XCTest
-@testable import AppStoreConnect_Swift_SDK
+@testable import ASC
 import Foundation
 #if canImport(FoundationNetworking)
 import FoundationNetworking
@@ -14,7 +14,7 @@ import FoundationNetworking
 
 final class APIProviderTests: XCTestCase {
 
-    private struct MockRequestExecutor<T:Codable>: RequestExecutor {
+    private struct MockRequestExecutor<T: Codable & Sendable>: RequestExecutor {
 
         let expectedResponse: Result<Response<T>, Swift.Error>
 
@@ -22,19 +22,19 @@ final class APIProviderTests: XCTestCase {
             self.expectedResponse = expectedResponse
         }
 
-        func execute(_ urlRequest: URLRequest, completion: @escaping (Result<Response<Data>, Swift.Error>) -> Void) {
+        func execute(_ urlRequest: URLRequest, completion: @escaping @Sendable (Result<Response<Data>, Swift.Error>) -> Void) {
             if let response = expectedResponse as? Result<Response<Data>, Swift.Error> {
                 completion(response)
             }
         }
 
-        func retrieve(_ url: URL, completion: @escaping (Result<Response<Data>, Swift.Error>) -> Void) {
+        func retrieve(_ url: URL, completion: @escaping @Sendable (Result<Response<Data>, Swift.Error>) -> Void) {
             if let response = expectedResponse as? Result<Response<Data>, Swift.Error> {
                 completion(response)
             }
         }
 
-        func download(_ urlRequest: URLRequest, completion: @escaping (Result<Response<URL>, Error>) -> Void) {
+        func download(_ urlRequest: URLRequest, completion: @escaping @Sendable (Result<Response<URL>, Error>) -> Void) {
             if let response = expectedResponse as? Result<Response<URL>, Swift.Error> {
                 completion(response)
             }

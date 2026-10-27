@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Builds.WithID.Relationships {
 		/// Path: `/v1/builds/{id}/relationships/app`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BuildAppLinkageResponse> {
+		public var get: Request<ASC.BuildAppLinkageResponse> {
 			Request(path: path, method: "GET", id: "builds_app_getToOneRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiXcodeVersions.WithID.Relationships {
 		/// Path: `/v1/ciXcodeVersions/{id}/relationships/macOsVersions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.CiXcodeVersionMacOsVersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.CiXcodeVersionMacOsVersionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "ciXcodeVersions_macOsVersions_getToManyRelationship")
 		}
 

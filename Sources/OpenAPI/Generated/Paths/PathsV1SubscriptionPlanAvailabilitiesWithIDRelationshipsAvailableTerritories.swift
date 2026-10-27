@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionPlanAvailabilities.WithID.Relationships {
 		/// Path: `/v1/subscriptionPlanAvailabilities/{id}/relationships/availableTerritories`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "subscriptionPlanAvailabilities_availableTerritories_getToManyRelationship")
 		}
 
@@ -23,7 +23,7 @@ extension APIEndpoint.V1.SubscriptionPlanAvailabilities.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.SubscriptionPlanAvailabilityAvailableTerritoriesLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionPlanAvailabilities_availableTerritories_replaceToManyRelationship")
 		}
 	}

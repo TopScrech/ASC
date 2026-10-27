@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppTags.WithID {
 		/// Path: `/v1/appTags/{id}/territories`
 		public let path: String
 
-		public func get(fieldsTerritories: [FieldsTerritories]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.TerritoriesResponse> {
+		public func get(fieldsTerritories: [FieldsTerritories]? = nil, limit: Int? = nil) -> Request<ASC.TerritoriesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsTerritories, limit), id: "appTags_territories_getToManyRelated")
 		}
 

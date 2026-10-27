@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/buildBetaNotifications`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BuildBetaNotificationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BuildBetaNotificationResponse> {
+		public func post(_ body: ASC.BuildBetaNotificationCreateRequest) -> Request<ASC.BuildBetaNotificationResponse> {
 			Request(path: path, method: "POST", body: body, id: "buildBetaNotifications_createInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/subscriptionPromotionalOffers`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.SubscriptionPromotionalOfferCreateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPromotionalOfferResponse> {
+		public func post(_ body: ASC.SubscriptionPromotionalOfferCreateRequest) -> Request<ASC.SubscriptionPromotionalOfferResponse> {
 			Request(path: path, method: "POST", body: body, id: "subscriptionPromotionalOffers_createInstance")
 		}
 	}

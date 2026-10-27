@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseAppStoreReviewScreenshots {
 		/// Path: `/v1/inAppPurchaseAppStoreReviewScreenshots/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseAppStoreReviewScreenshotResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseAppStoreReviewScreenshots_getInstance")
 		}
 
@@ -73,7 +73,7 @@ extension APIEndpoint.V1.InAppPurchaseAppStoreReviewScreenshots {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAppStoreReviewScreenshotResponse> {
+		public func patch(_ body: ASC.InAppPurchaseAppStoreReviewScreenshotUpdateRequest) -> Request<ASC.InAppPurchaseAppStoreReviewScreenshotResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "inAppPurchaseAppStoreReviewScreenshots_updateInstance")
 		}
 

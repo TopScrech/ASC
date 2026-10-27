@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiBuildActions.WithID {
 		/// Path: `/v1/ciBuildActions/{id}/artifacts`
 		public let path: String
 
-		public func get(fieldsCiArtifacts: [FieldsCiArtifacts]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.CiArtifactsResponse> {
+		public func get(fieldsCiArtifacts: [FieldsCiArtifacts]? = nil, limit: Int? = nil) -> Request<ASC.CiArtifactsResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsCiArtifacts, limit), id: "ciBuildActions_artifacts_getToManyRelated")
 		}
 

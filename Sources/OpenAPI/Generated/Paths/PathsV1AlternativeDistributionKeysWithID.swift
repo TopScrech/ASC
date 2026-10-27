@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AlternativeDistributionKeys {
 		/// Path: `/v1/alternativeDistributionKeys/{id}`
 		public let path: String
 
-		public func get(fieldsAlternativeDistributionKeys: [FieldsAlternativeDistributionKeys]? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionKeyResponse> {
+		public func get(fieldsAlternativeDistributionKeys: [FieldsAlternativeDistributionKeys]? = nil) -> Request<ASC.AlternativeDistributionKeyResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAlternativeDistributionKeys), id: "alternativeDistributionKeys_getInstance")
 		}
 

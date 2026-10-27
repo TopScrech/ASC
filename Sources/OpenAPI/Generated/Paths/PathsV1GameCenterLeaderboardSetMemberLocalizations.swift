@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/gameCenterLeaderboardSetMemberLocalizations`
 		public let path: String
 
-		public func get(parameters: GetParameters) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetMemberLocalizationsResponse> {
+		public func get(parameters: GetParameters) -> Request<ASC.GameCenterLeaderboardSetMemberLocalizationsResponse> {
 			Request(path: path, method: "GET", query: parameters.asQuery, id: "gameCenterLeaderboardSetMemberLocalizations_getCollection")
 		}
 
@@ -96,7 +96,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetMemberLocalizationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetMemberLocalizationResponse> {
+		public func post(_ body: ASC.GameCenterLeaderboardSetMemberLocalizationCreateRequest) -> Request<ASC.GameCenterLeaderboardSetMemberLocalizationResponse> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterLeaderboardSetMemberLocalizations_createInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipDefaultExperiences.WithID {
 		/// Path: `/v1/appClipDefaultExperiences/{id}/appClipDefaultExperienceLocalizations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceLocalizationsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppClipDefaultExperienceLocalizationsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appClipDefaultExperiences_appClipDefaultExperienceLocalizations_getToManyRelated")
 		}
 

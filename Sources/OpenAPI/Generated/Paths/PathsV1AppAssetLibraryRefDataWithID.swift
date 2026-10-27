@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppAssetLibraryRefData {
 		/// Path: `/v1/appAssetLibraryRefData/{id}`
 		public let path: String
 
-		public func get(fieldsAppAssetLibraryRefData: [FieldsAppAssetLibraryRefData]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryRefDatumResponse> {
+		public func get(fieldsAppAssetLibraryRefData: [FieldsAppAssetLibraryRefData]? = nil) -> Request<ASC.AppAssetLibraryRefDatumResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAppAssetLibraryRefData), id: "appAssetLibraryRefData_getInstance")
 		}
 

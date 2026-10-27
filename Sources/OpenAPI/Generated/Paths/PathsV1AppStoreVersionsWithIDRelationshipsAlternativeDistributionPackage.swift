@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersions.WithID.Relationships {
 		/// Path: `/v1/appStoreVersions/{id}/relationships/alternativeDistributionPackage`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppStoreVersionAlternativeDistributionPackageLinkageResponse> {
+		public var get: Request<ASC.AppStoreVersionAlternativeDistributionPackageLinkageResponse> {
 			Request(path: path, method: "GET", id: "appStoreVersions_alternativeDistributionPackage_getToOneRelationship")
 		}
 	}

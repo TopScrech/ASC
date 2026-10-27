@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Builds.WithID.Relationships {
 		/// Path: `/v1/builds/{id}/relationships/individualTesters`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildIndividualTestersLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.BuildIndividualTestersLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "builds_individualTesters_getToManyRelationship")
 		}
 
@@ -23,11 +23,11 @@ extension APIEndpoint.V1.Builds.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BuildIndividualTestersLinkagesRequest) -> Request<Void> {
+		public func post(_ body: ASC.BuildIndividualTestersLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "POST", body: body, id: "builds_individualTesters_createToManyRelationship")
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.BuildIndividualTestersLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.BuildIndividualTestersLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "builds_individualTesters_deleteToManyRelationship")
 		}
 	}

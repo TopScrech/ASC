@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersionExperimentTreatmentLocalizations.WithID.
 		/// Path: `/v1/appStoreVersionExperimentTreatmentLocalizations/{id}/relationships/placements`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppStoreVersionExperimentTreatmentLocalizationPlacementsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appStoreVersionExperimentTreatmentLocalizations_placements_getToManyRelationship")
 		}
 

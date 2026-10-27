@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/routingAppCoverages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.RoutingAppCoverageCreateRequest) -> Request<AppStoreConnect_Swift_SDK.RoutingAppCoverageResponse> {
+		public func post(_ body: ASC.RoutingAppCoverageCreateRequest) -> Request<ASC.RoutingAppCoverageResponse> {
 			Request(path: path, method: "POST", body: body, id: "routingAppCoverages_createInstance")
 		}
 	}

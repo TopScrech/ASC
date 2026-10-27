@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/ciBuildRuns`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.CiBuildRunCreateRequest) -> Request<AppStoreConnect_Swift_SDK.CiBuildRunResponse> {
+		public func post(_ body: ASC.CiBuildRunCreateRequest) -> Request<ASC.CiBuildRunResponse> {
 			Request(path: path, method: "POST", body: body, id: "ciBuildRuns_createInstance")
 		}
 	}

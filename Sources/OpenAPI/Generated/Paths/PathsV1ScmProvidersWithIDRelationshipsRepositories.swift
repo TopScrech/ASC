@@ -13,7 +13,7 @@ extension APIEndpoint.V1.ScmProviders.WithID.Relationships {
 		/// Path: `/v1/scmProviders/{id}/relationships/repositories`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmProviderRepositoriesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.ScmProviderRepositoriesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "scmProviders_repositories_getToManyRelationship")
 		}
 

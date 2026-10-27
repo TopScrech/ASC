@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/alternativeDistributionKey`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppAlternativeDistributionKeyLinkageResponse> {
+		public var get: Request<ASC.AppAlternativeDistributionKeyLinkageResponse> {
 			Request(path: path, method: "GET", id: "apps_alternativeDistributionKey_getToOneRelationship")
 		}
 	}

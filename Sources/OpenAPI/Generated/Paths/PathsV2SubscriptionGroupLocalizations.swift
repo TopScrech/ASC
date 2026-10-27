@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/subscriptionGroupLocalizations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.SubscriptionGroupLocalizationV2CreateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGroupLocalizationV2Response> {
+		public func post(_ body: ASC.SubscriptionGroupLocalizationV2CreateRequest) -> Request<ASC.SubscriptionGroupLocalizationV2Response> {
 			Request(path: path, method: "POST", body: body, id: "subscriptionGroupLocalizationsV2_createInstance")
 		}
 	}

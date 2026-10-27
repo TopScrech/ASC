@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildBetaDetails.WithID {
 		/// Path: `/v1/buildBetaDetails/{id}/build`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BuildResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "buildBetaDetails_build_getToOneRelated")
 		}
 

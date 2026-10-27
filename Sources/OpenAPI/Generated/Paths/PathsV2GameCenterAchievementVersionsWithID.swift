@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterAchievementVersions {
 		/// Path: `/v2/gameCenterAchievementVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementVersionV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterAchievementVersionV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAchievementVersionsV2_getInstance")
 		}
 

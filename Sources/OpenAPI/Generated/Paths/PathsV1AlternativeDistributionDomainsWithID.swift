@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AlternativeDistributionDomains {
 		/// Path: `/v1/alternativeDistributionDomains/{id}`
 		public let path: String
 
-		public func get(fieldsAlternativeDistributionDomains: [FieldsAlternativeDistributionDomains]? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionDomainResponse> {
+		public func get(fieldsAlternativeDistributionDomains: [FieldsAlternativeDistributionDomains]? = nil) -> Request<ASC.AlternativeDistributionDomainResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAlternativeDistributionDomains), id: "alternativeDistributionDomains_getInstance")
 		}
 

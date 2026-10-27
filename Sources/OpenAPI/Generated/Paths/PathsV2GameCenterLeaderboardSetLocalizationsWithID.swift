@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboardSetLocalizations {
 		/// Path: `/v2/gameCenterLeaderboardSetLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetLocalizationV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterLeaderboardSetLocalizationV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterLeaderboardSetLocalizationsV2_getInstance")
 		}
 
@@ -68,7 +68,7 @@ extension APIEndpoint.V2.GameCenterLeaderboardSetLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetLocalizationV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetLocalizationV2Response> {
+		public func patch(_ body: ASC.GameCenterLeaderboardSetLocalizationV2UpdateRequest) -> Request<ASC.GameCenterLeaderboardSetLocalizationV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardSetLocalizationsV2_updateInstance")
 		}
 

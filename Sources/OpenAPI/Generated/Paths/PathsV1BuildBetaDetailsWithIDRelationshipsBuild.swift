@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildBetaDetails.WithID.Relationships {
 		/// Path: `/v1/buildBetaDetails/{id}/relationships/build`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BuildBetaDetailBuildLinkageResponse> {
+		public var get: Request<ASC.BuildBetaDetailBuildLinkageResponse> {
 			Request(path: path, method: "GET", id: "buildBetaDetails_build_getToOneRelationship")
 		}
 	}

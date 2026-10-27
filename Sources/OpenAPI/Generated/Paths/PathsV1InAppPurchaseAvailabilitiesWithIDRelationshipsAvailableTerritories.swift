@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseAvailabilities.WithID.Relationships {
 		/// Path: `/v1/inAppPurchaseAvailabilities/{id}/relationships/availableTerritories`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAvailabilityAvailableTerritoriesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.InAppPurchaseAvailabilityAvailableTerritoriesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "inAppPurchaseAvailabilities_availableTerritories_getToManyRelationship")
 		}
 

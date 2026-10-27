@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Webhooks.WithID.Relationships {
 		/// Path: `/v1/webhooks/{id}/relationships/deliveries`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.WebhookDeliveriesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.WebhookDeliveriesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "webhooks_deliveries_getToManyRelationship")
 		}
 

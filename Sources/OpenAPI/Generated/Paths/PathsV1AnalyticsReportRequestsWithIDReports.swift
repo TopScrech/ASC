@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AnalyticsReportRequests.WithID {
 		/// Path: `/v1/analyticsReportRequests/{id}/reports`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AnalyticsReportsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AnalyticsReportsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "analyticsReportRequests_reports_getToManyRelated")
 		}
 

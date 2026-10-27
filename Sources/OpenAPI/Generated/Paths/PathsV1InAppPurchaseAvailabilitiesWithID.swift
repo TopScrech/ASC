@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseAvailabilities {
 		/// Path: `/v1/inAppPurchaseAvailabilities/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseAvailabilityResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseAvailabilityResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseAvailabilities_getInstance")
 		}
 

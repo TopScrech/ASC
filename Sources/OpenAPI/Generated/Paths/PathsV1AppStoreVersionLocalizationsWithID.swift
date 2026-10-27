@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersionLocalizations {
 		/// Path: `/v1/appStoreVersionLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreVersionLocalizationResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersionLocalizations_getInstance")
 		}
 
@@ -140,7 +140,7 @@ extension APIEndpoint.V1.AppStoreVersionLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationResponse> {
+		public func patch(_ body: ASC.AppStoreVersionLocalizationUpdateRequest) -> Request<ASC.AppStoreVersionLocalizationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appStoreVersionLocalizations_updateInstance")
 		}
 

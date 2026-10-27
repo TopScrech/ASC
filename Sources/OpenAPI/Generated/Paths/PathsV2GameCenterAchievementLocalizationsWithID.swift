@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterAchievementLocalizations {
 		/// Path: `/v2/gameCenterAchievementLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterAchievementLocalizationV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAchievementLocalizationsV2_getInstance")
 		}
 
@@ -70,7 +70,7 @@ extension APIEndpoint.V2.GameCenterAchievementLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationV2Response> {
+		public func patch(_ body: ASC.GameCenterAchievementLocalizationV2UpdateRequest) -> Request<ASC.GameCenterAchievementLocalizationV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterAchievementLocalizationsV2_updateInstance")
 		}
 

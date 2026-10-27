@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Builds {
 		/// Path: `/v1/builds/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BuildResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "builds_getInstance")
 		}
 
@@ -342,7 +342,7 @@ extension APIEndpoint.V1.Builds {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BuildUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BuildResponse> {
+		public func patch(_ body: ASC.BuildUpdateRequest) -> Request<ASC.BuildResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "builds_updateInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersions.WithID.Relationships {
 		/// Path: `/v1/appStoreVersions/{id}/relationships/appStoreVersionPhasedRelease`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppStoreVersionAppStoreVersionPhasedReleaseLinkageResponse> {
+		public var get: Request<ASC.AppStoreVersionAppStoreVersionPhasedReleaseLinkageResponse> {
 			Request(path: path, method: "GET", id: "appStoreVersions_appStoreVersionPhasedRelease_getToOneRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionImages {
 		/// Path: `/v1/subscriptionImages/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionImageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionImageResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptionImages_getInstance")
 		}
 
@@ -78,7 +78,7 @@ extension APIEndpoint.V1.SubscriptionImages {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionImageResponse> {
+		public func patch(_ body: ASC.SubscriptionImageUpdateRequest) -> Request<ASC.SubscriptionImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionImages_updateInstance")
 		}
 

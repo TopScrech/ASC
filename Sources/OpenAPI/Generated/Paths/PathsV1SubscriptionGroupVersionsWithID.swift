@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionGroupVersions {
 		/// Path: `/v1/subscriptionGroupVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGroupVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionGroupVersionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptionGroupVersions_getInstance")
 		}
 

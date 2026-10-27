@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaCrashLogs {
 		/// Path: `/v1/betaCrashLogs/{id}`
 		public let path: String
 
-		public func get(fieldsBetaCrashLogs: [FieldsBetaCrashLogs]? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaCrashLogResponse> {
+		public func get(fieldsBetaCrashLogs: [FieldsBetaCrashLogs]? = nil) -> Request<ASC.BetaCrashLogResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsBetaCrashLogs), id: "betaCrashLogs_getInstance")
 		}
 

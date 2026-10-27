@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/users`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.UsersResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.UsersResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "users_getCollection")
 		}
 

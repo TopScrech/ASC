@@ -14,7 +14,7 @@ extension APIEndpoint.V1.AppEncryptionDeclarations.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public var get: Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationAppLinkageResponse> {
+		public var get: Request<ASC.AppEncryptionDeclarationAppLinkageResponse> {
 			Request(path: path, method: "GET", id: "appEncryptionDeclarations_app_getToOneRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipDefaultExperiences {
 		/// Path: `/v1/appClipDefaultExperiences/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppClipDefaultExperienceResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appClipDefaultExperiences_getInstance")
 		}
 
@@ -110,7 +110,7 @@ extension APIEndpoint.V1.AppClipDefaultExperiences {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppClipDefaultExperienceUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceResponse> {
+		public func patch(_ body: ASC.AppClipDefaultExperienceUpdateRequest) -> Request<ASC.AppClipDefaultExperienceResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appClipDefaultExperiences_updateInstance")
 		}
 

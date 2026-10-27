@@ -13,7 +13,7 @@ extension APIEndpoint.V1.PromotedPurchases {
 		/// Path: `/v1/promotedPurchases/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.PromotedPurchaseResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.PromotedPurchaseResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "promotedPurchases_getInstance")
 		}
 
@@ -99,7 +99,7 @@ extension APIEndpoint.V1.PromotedPurchases {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.PromotedPurchaseUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.PromotedPurchaseResponse> {
+		public func patch(_ body: ASC.PromotedPurchaseUpdateRequest) -> Request<ASC.PromotedPurchaseResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "promotedPurchases_updateInstance")
 		}
 

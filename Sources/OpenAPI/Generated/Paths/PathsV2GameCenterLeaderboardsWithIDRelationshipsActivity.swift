@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboards.WithID.Relationships {
 		/// Path: `/v2/gameCenterLeaderboards/{id}/relationships/activity`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardV2ActivityLinkageRequest) -> Request<Void> {
+		public func patch(_ body: ASC.GameCenterLeaderboardV2ActivityLinkageRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardsV2_activity_updateToOneRelationship")
 		}
 	}

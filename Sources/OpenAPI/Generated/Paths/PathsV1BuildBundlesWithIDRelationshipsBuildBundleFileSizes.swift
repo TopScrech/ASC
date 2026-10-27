@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildBundles.WithID.Relationships {
 		/// Path: `/v1/buildBundles/{id}/relationships/buildBundleFileSizes`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildBundleBuildBundleFileSizesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.BuildBundleBuildBundleFileSizesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "buildBundles_buildBundleFileSizes_getToManyRelationship")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.ScmProviders.WithID {
 		/// Path: `/v1/scmProviders/{id}/repositories`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmRepositoriesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.ScmRepositoriesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "scmProviders_repositories_getToManyRelated")
 		}
 

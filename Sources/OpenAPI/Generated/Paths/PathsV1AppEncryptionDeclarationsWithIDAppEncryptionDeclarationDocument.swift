@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppEncryptionDeclarations.WithID {
 		/// Path: `/v1/appEncryptionDeclarations/{id}/appEncryptionDeclarationDocument`
 		public let path: String
 
-		public func get(fieldsAppEncryptionDeclarationDocuments: [FieldsAppEncryptionDeclarationDocuments]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationDocumentResponse> {
+		public func get(fieldsAppEncryptionDeclarationDocuments: [FieldsAppEncryptionDeclarationDocuments]? = nil) -> Request<ASC.AppEncryptionDeclarationDocumentResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAppEncryptionDeclarationDocuments), id: "appEncryptionDeclarations_appEncryptionDeclarationDocument_getToOneRelated")
 		}
 

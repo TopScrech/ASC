@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersions.WithID {
 		/// Path: `/v1/appStoreVersions/{id}/customerReviews`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CustomerReviewsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.CustomerReviewsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersions_customerReviews_getToManyRelated")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppPriceSchedules.WithID.Relationships {
 		/// Path: `/v1/appPriceSchedules/{id}/relationships/automaticPrices`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPriceScheduleAutomaticPricesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppPriceScheduleAutomaticPricesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appPriceSchedules_automaticPrices_getToManyRelationship")
 		}
 

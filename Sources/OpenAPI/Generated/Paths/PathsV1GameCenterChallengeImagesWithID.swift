@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterChallengeImages {
 		/// Path: `/v1/gameCenterChallengeImages/{id}`
 		public let path: String
 
-		public func get(fieldsGameCenterChallengeImages: [FieldsGameCenterChallengeImages]? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterChallengeImageResponse> {
+		public func get(fieldsGameCenterChallengeImages: [FieldsGameCenterChallengeImages]? = nil) -> Request<ASC.GameCenterChallengeImageResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsGameCenterChallengeImages), id: "gameCenterChallengeImages_getInstance")
 		}
 
@@ -31,7 +31,7 @@ extension APIEndpoint.V1.GameCenterChallengeImages {
 			case assetDeliveryState
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterChallengeImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterChallengeImageResponse> {
+		public func patch(_ body: ASC.GameCenterChallengeImageUpdateRequest) -> Request<ASC.GameCenterChallengeImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterChallengeImages_updateInstance")
 		}
 

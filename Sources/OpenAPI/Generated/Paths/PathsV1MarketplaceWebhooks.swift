@@ -14,7 +14,7 @@ extension APIEndpoint.V1 {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(fieldsMarketplaceWebhooks: [FieldsMarketplaceWebhooks]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.MarketplaceWebhooksResponse> {
+		public func get(fieldsMarketplaceWebhooks: [FieldsMarketplaceWebhooks]? = nil, limit: Int? = nil) -> Request<ASC.MarketplaceWebhooksResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsMarketplaceWebhooks, limit), id: "marketplaceWebhooks_getCollection")
 		}
 
@@ -30,7 +30,7 @@ extension APIEndpoint.V1 {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func post(_ body: AppStoreConnect_Swift_SDK.MarketplaceWebhookCreateRequest) -> Request<AppStoreConnect_Swift_SDK.MarketplaceWebhookResponse> {
+		public func post(_ body: ASC.MarketplaceWebhookCreateRequest) -> Request<ASC.MarketplaceWebhookResponse> {
 			Request(path: path, method: "POST", body: body, id: "marketplaceWebhooks_createInstance")
 		}
 	}

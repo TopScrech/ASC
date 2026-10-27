@@ -14,7 +14,7 @@ extension APIEndpoint.V1 {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterAchievementCreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementResponse> {
+		public func post(_ body: ASC.GameCenterAchievementCreateRequest) -> Request<ASC.GameCenterAchievementResponse> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterAchievements_createInstance")
 		}
 	}

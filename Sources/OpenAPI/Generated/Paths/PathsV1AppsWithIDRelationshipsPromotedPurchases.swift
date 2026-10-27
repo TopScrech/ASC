@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/promotedPurchases`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPromotedPurchasesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppPromotedPurchasesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "apps_promotedPurchases_getToManyRelationship")
 		}
 
@@ -23,7 +23,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppPromotedPurchasesLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.AppPromotedPurchasesLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "apps_promotedPurchases_replaceToManyRelationship")
 		}
 	}

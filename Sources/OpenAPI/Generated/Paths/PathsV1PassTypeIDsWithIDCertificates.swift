@@ -13,7 +13,7 @@ extension APIEndpoint.V1.PassTypeIDs.WithID {
 		/// Path: `/v1/passTypeIds/{id}/certificates`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CertificatesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.CertificatesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "passTypeIds_certificates_getToManyRelated")
 		}
 

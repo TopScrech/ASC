@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/buildUploads`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BuildUploadCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BuildUploadResponse> {
+		public func post(_ body: ASC.BuildUploadCreateRequest) -> Request<ASC.BuildUploadResponse> {
 			Request(path: path, method: "POST", body: body, id: "buildUploads_createInstance")
 		}
 	}

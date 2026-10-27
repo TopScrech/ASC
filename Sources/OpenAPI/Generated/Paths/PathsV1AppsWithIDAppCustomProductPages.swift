@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID {
 		/// Path: `/v1/apps/{id}/appCustomProductPages`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPagesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppCustomProductPagesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "apps_appCustomProductPages_getToManyRelated")
 		}
 

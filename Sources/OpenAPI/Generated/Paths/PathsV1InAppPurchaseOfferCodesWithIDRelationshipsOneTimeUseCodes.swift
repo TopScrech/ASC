@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseOfferCodes.WithID.Relationships {
 		/// Path: `/v1/inAppPurchaseOfferCodes/{id}/relationships/oneTimeUseCodes`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeOneTimeUseCodesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.InAppPurchaseOfferCodeOneTimeUseCodesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "inAppPurchaseOfferCodes_oneTimeUseCodes_getToManyRelationship")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V2.InAppPurchaseImages {
 		/// Path: `/v2/inAppPurchaseImages/{id}`
 		public let path: String
 
-		public func get(fieldsInAppPurchaseImages: [FieldsInAppPurchaseImages]? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseImageV2Response> {
+		public func get(fieldsInAppPurchaseImages: [FieldsInAppPurchaseImages]? = nil) -> Request<ASC.InAppPurchaseImageV2Response> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsInAppPurchaseImages), id: "inAppPurchaseImagesV2_getInstance")
 		}
 
@@ -32,7 +32,7 @@ extension APIEndpoint.V2.InAppPurchaseImages {
 			case assetDeliveryState
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseImageV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseImageV2Response> {
+		public func patch(_ body: ASC.InAppPurchaseImageV2UpdateRequest) -> Request<ASC.InAppPurchaseImageV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "inAppPurchaseImagesV2_updateInstance")
 		}
 

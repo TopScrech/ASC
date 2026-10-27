@@ -15,10 +15,10 @@ import Combine
 import FoundationNetworking
 #endif
 
-public typealias RequestCompletionHandler<T> = (Result<T, Swift.Error>) -> Void
+public typealias RequestCompletionHandler<T> = @Sendable (Result<T, Swift.Error>) -> Void
 
 /// The configuration needed to set up the API Provider including all needed information for performing API requests.
-public struct APIConfiguration {
+public struct APIConfiguration: Sendable {
 
     /// Your private key ID from App Store Connect (Ex: 2X9R4HXF34)
     let privateKeyID: String
@@ -138,7 +138,8 @@ public struct APIConfiguration {
 }
 
 /// Provides access to all API Methods. Can be used to perform API requests.
-public final class APIProvider {
+// Stored dependencies are immutable and synchronize their mutable state internally
+public final class APIProvider: @unchecked Sendable {
 
     public enum Error: Swift.Error, CustomDebugStringConvertible, LocalizedError {
         case requestGeneration
@@ -182,8 +183,8 @@ public final class APIProvider {
 
     public typealias StatusCode = Int
 
-    /// Contains a JSON Decoder which can be reused.
-    static let jsonDecoder: JSONDecoder = {
+    /// Creates a decoder with its own date formatter for each response
+    static var jsonDecoder: JSONDecoder {
         let decoder = JSONDecoder()
 
         let formatter = DateFormatter()
@@ -221,7 +222,7 @@ public final class APIProvider {
             throw APIProvider.Error.dateDecodingError(dateStr)
         })
         return decoder
-    }()
+    }
 
     /// The configuration needed to set up the API Provider including all needed information for performing API requests.
     private let configuration: APIConfiguration
@@ -270,7 +271,7 @@ public final class APIProvider {
     /// - Parameters:
     ///   - endpoint: The API endpoint to request.
     ///   - completion: The completion callback which will be called on completion containing the result.
-    public func request<T: Decodable>(_ request: Request<T>, completion: @escaping RequestCompletionHandler<T>) {
+    public func request<T: Decodable & SendableMetatype>(_ request: Request<T>, completion: @escaping RequestCompletionHandler<T>) {
         guard let request = try? requestsAuthenticator.adapt(request.asURLRequest(encoder: encoder)) else {
             completion(.failure(Error.requestGeneration))
             return
@@ -301,9 +302,11 @@ extension APIProvider {
     /// - Parameters:
     ///   - endpoint: The API endpoint to request.
     public func request(_ endpoint: Request<Void>) async throws {
-        try await withCheckedThrowingContinuation { continuation in
-            request(endpoint, completion: continuation.resume(with:))
+        guard let request = try? requestsAuthenticator.adapt(endpoint.asURLRequest(encoder: encoder)) else {
+            throw Error.requestGeneration
         }
+        let result = await execute(request)
+        return try mapVoidResponse(result).get()
     }
 
     /// Performs a data request to the given API endpoint
@@ -311,9 +314,11 @@ extension APIProvider {
     /// - Parameters:
     ///   - endpoint: The API endpoint to request.
     public func request<T>(_ endpoint: Request<T>) async throws -> T where T: Decodable {
-        try await withCheckedThrowingContinuation { continuation in
-            request(endpoint, completion: continuation.resume(with:))
+        guard let request = try? requestsAuthenticator.adapt(endpoint.asURLRequest(encoder: encoder)) else {
+            throw Error.requestGeneration
         }
+        let result = await execute(request)
+        return try mapResponse(result).get()
     }
 
     /// Performs a download request to the given API endpoint
@@ -321,14 +326,24 @@ extension APIProvider {
     /// - Parameters:
     ///   - endpoint: The API endpoint to request.
     public func download<T>(_ endpoint: Request<T>) async throws -> URL where T: Decodable {
-        try await withCheckedThrowingContinuation { continuation in
-            download(endpoint, completion: continuation.resume(with:))
+        guard let request = try? requestsAuthenticator.adapt(endpoint.asURLRequest(encoder: encoder)) else {
+            throw Error.requestGeneration
         }
+        let result = await withCheckedContinuation { continuation in
+            requestExecutor.download(request) { continuation.resume(returning: $0) }
+        }
+        return try mapResponse(result).get()
     }
 }
 
 // MARK: - Private
 private extension APIProvider {
+
+    func execute(_ request: URLRequest) async -> Result<Response<Data>, Swift.Error> {
+        await withCheckedContinuation { continuation in
+            requestExecutor.execute(request) { continuation.resume(returning: $0) }
+        }
+    }
 
     /// Maps a network response to a decodable type
     ///
@@ -428,11 +443,13 @@ extension APIProvider {
     ///   - pageAfter: the current response
     /// - Returns: the endpoint's next response page or nil when there is no further response
     public func request<T>(_ endpoint: Request<T>, pageAfter currentPage: T) async throws -> T? where T: Decodable {
-        try await withCheckedThrowingContinuation { continuation in
-            request(endpoint, pageAfter: currentPage) { result in
-                continuation.resume(with: result)
-            }
+        guard let nextPage = pagedDocumentLinks(currentPage)?.next,
+              let url = URL(string: nextPage) else {
+            return nil
         }
+        let request = try requestsAuthenticator.adapt(URLRequest(url: url))
+        let result = await execute(request)
+        return try mapResponse(result).get()
     }
     
     /// Is the type of response from the given API endpoint one that supports multiple pages of response?
@@ -467,7 +484,7 @@ extension APIProvider {
     ///   - request: endpoint: The API endpoint to request.
     ///   - pageAfter: the current response
     ///   - completion: The completion callback which will be called on completion containing the result.
-    public func request<T: Decodable>(_ request: Request<T>, pageAfter currentPage: T, completion: @escaping RequestCompletionHandler<T?>) {
+    public func request<T: Decodable & SendableMetatype>(_ request: Request<T>, pageAfter currentPage: T, completion: @escaping RequestCompletionHandler<T?>) {
                         
         guard
             let nextPage = pagedDocumentLinks(currentPage)?.next,

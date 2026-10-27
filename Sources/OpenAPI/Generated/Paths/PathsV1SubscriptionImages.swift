@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/subscriptionImages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.SubscriptionImageCreateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionImageResponse> {
+		public func post(_ body: ASC.SubscriptionImageCreateRequest) -> Request<ASC.SubscriptionImageResponse> {
 			Request(path: path, method: "POST", body: body, id: "subscriptionImages_createInstance")
 		}
 	}

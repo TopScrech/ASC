@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppInfos.WithID.Relationships {
 		/// Path: `/v1/appInfos/{id}/relationships/ageRatingDeclaration`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppInfoAgeRatingDeclarationLinkageResponse> {
+		public var get: Request<ASC.AppInfoAgeRatingDeclarationLinkageResponse> {
 			Request(path: path, method: "GET", id: "appInfos_ageRatingDeclaration_getToOneRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppTags {
 		/// Path: `/v1/appTags/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppTagUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppTagResponse> {
+		public func patch(_ body: ASC.AppTagUpdateRequest) -> Request<ASC.AppTagResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appTags_updateInstance")
 		}
 	}

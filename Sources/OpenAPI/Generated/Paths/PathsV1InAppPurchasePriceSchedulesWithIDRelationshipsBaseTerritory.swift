@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchasePriceSchedules.WithID.Relationships {
 		/// Path: `/v1/inAppPurchasePriceSchedules/{id}/relationships/baseTerritory`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.InAppPurchasePriceScheduleBaseTerritoryLinkageResponse> {
+		public var get: Request<ASC.InAppPurchasePriceScheduleBaseTerritoryLinkageResponse> {
 			Request(path: path, method: "GET", id: "inAppPurchasePriceSchedules_baseTerritory_getToOneRelationship")
 		}
 	}

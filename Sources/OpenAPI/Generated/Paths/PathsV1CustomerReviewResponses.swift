@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/customerReviewResponses`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.CustomerReviewResponseV1CreateRequest) -> Request<AppStoreConnect_Swift_SDK.CustomerReviewResponseV1Response> {
+		public func post(_ body: ASC.CustomerReviewResponseV1CreateRequest) -> Request<ASC.CustomerReviewResponseV1Response> {
 			Request(path: path, method: "POST", body: body, id: "customerReviewResponses_createInstance")
 		}
 	}

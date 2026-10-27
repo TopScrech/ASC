@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionGroups.WithID.Relationships {
 		/// Path: `/v1/subscriptionGroups/{id}/relationships/versions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGroupVersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.SubscriptionGroupVersionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "subscriptionGroups_versions_getToManyRelationship")
 		}
 

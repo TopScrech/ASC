@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/builds`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BuildsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "builds_getCollection")
 		}
 

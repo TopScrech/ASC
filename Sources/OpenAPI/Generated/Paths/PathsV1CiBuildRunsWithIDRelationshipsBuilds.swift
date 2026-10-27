@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiBuildRuns.WithID.Relationships {
 		/// Path: `/v1/ciBuildRuns/{id}/relationships/builds`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.CiBuildRunBuildsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.CiBuildRunBuildsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "ciBuildRuns_builds_getToManyRelationship")
 		}
 

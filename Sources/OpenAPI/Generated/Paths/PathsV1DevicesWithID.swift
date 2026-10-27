@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Devices {
 		/// Path: `/v1/devices/{id}`
 		public let path: String
 
-		public func get(fieldsDevices: [FieldsDevices]? = nil) -> Request<AppStoreConnect_Swift_SDK.DeviceResponse> {
+		public func get(fieldsDevices: [FieldsDevices]? = nil) -> Request<ASC.DeviceResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsDevices), id: "devices_getInstance")
 		}
 
@@ -33,7 +33,7 @@ extension APIEndpoint.V1.Devices {
 			case addedDate
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.DeviceUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.DeviceResponse> {
+		public func patch(_ body: ASC.DeviceUpdateRequest) -> Request<ASC.DeviceResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "devices_updateInstance")
 		}
 	}

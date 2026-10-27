@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID {
 		/// Path: `/v1/apps/{id}/assetLibrary`
 		public let path: String
 
-		public func get(fieldsAppAssetLibraries: [FieldsAppAssetLibraries]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryResponse> {
+		public func get(fieldsAppAssetLibraries: [FieldsAppAssetLibraries]? = nil) -> Request<ASC.AppAssetLibraryResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAppAssetLibraries), id: "apps_assetLibrary_getToOneRelated")
 		}
 

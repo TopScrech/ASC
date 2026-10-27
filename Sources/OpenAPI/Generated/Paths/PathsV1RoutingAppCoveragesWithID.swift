@@ -13,7 +13,7 @@ extension APIEndpoint.V1.RoutingAppCoverages {
 		/// Path: `/v1/routingAppCoverages/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.RoutingAppCoverageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.RoutingAppCoverageResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "routingAppCoverages_getInstance")
 		}
 
@@ -77,7 +77,7 @@ extension APIEndpoint.V1.RoutingAppCoverages {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.RoutingAppCoverageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.RoutingAppCoverageResponse> {
+		public func patch(_ body: ASC.RoutingAppCoverageUpdateRequest) -> Request<ASC.RoutingAppCoverageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "routingAppCoverages_updateInstance")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterAchievementVersions.WithID {
 		/// Path: `/v2/gameCenterAchievementVersions/{id}/localizations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementLocalizationsV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterAchievementLocalizationsV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAchievementVersionsV2_localizations_getToManyRelated")
 		}
 

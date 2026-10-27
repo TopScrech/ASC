@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/endUserLicenseAgreement`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppEndUserLicenseAgreementLinkageResponse> {
+		public var get: Request<ASC.AppEndUserLicenseAgreementLinkageResponse> {
 			Request(path: path, method: "GET", id: "apps_endUserLicenseAgreement_getToOneRelationship")
 		}
 	}

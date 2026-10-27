@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppAssetLibraryVideos {
 		/// Path: `/v1/appAssetLibraryVideos/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryVideoResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppAssetLibraryVideoResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appAssetLibraryVideos_getInstance")
 		}
 
@@ -77,7 +77,7 @@ extension APIEndpoint.V1.AppAssetLibraryVideos {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppAssetLibraryVideoUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryVideoResponse> {
+		public func patch(_ body: ASC.AppAssetLibraryVideoUpdateRequest) -> Request<ASC.AppAssetLibraryVideoResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appAssetLibraryVideos_updateInstance")
 		}
 

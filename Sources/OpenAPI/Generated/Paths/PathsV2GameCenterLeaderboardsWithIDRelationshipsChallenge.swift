@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboards.WithID.Relationships {
 		/// Path: `/v2/gameCenterLeaderboards/{id}/relationships/challenge`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardV2ChallengeLinkageRequest) -> Request<Void> {
+		public func patch(_ body: ASC.GameCenterLeaderboardV2ChallengeLinkageRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardsV2_challenge_updateToOneRelationship")
 		}
 	}

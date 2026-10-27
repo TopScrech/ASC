@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreReviewDetails.WithID {
 		/// Path: `/v1/appStoreReviewDetails/{id}/appStoreReviewAttachments`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreReviewAttachmentsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreReviewAttachmentsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreReviewDetails_appStoreReviewAttachments_getToManyRelated")
 		}
 

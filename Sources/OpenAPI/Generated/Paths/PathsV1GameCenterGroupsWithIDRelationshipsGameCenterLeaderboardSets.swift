@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterGroups.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterGroupGameCenterLeaderboardSetsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterGroupGameCenterLeaderboardSetsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterGroups_gameCenterLeaderboardSets_getToManyRelationship")
 		}
 
@@ -25,7 +25,7 @@ extension APIEndpoint.V1.GameCenterGroups.WithID.Relationships {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterGroupGameCenterLeaderboardSetsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.GameCenterGroupGameCenterLeaderboardSetsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterGroups_gameCenterLeaderboardSets_replaceToManyRelationship")
 		}
 	}

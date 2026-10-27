@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/winBackOffers`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.WinBackOfferCreateRequest) -> Request<AppStoreConnect_Swift_SDK.WinBackOfferResponse> {
+		public func post(_ body: ASC.WinBackOfferCreateRequest) -> Request<ASC.WinBackOfferResponse> {
 			Request(path: path, method: "POST", body: body, id: "winBackOffers_createInstance")
 		}
 	}

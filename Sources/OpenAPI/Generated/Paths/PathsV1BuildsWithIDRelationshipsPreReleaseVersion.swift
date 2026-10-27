@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Builds.WithID.Relationships {
 		/// Path: `/v1/builds/{id}/relationships/preReleaseVersion`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BuildPreReleaseVersionLinkageResponse> {
+		public var get: Request<ASC.BuildPreReleaseVersionLinkageResponse> {
 			Request(path: path, method: "GET", id: "builds_preReleaseVersion_getToOneRelationship")
 		}
 	}

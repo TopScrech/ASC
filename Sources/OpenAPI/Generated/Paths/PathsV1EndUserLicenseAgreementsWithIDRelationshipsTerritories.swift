@@ -13,7 +13,7 @@ extension APIEndpoint.V1.EndUserLicenseAgreements.WithID.Relationships {
 		/// Path: `/v1/endUserLicenseAgreements/{id}/relationships/territories`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.EndUserLicenseAgreementTerritoriesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.EndUserLicenseAgreementTerritoriesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "endUserLicenseAgreements_territories_getToManyRelationship")
 		}
 

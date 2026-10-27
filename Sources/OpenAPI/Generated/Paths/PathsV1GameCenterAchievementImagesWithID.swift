@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterAchievementImages {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementImageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterAchievementImageResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAchievementImages_getInstance")
 		}
 
@@ -61,7 +61,7 @@ extension APIEndpoint.V1.GameCenterAchievementImages {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterAchievementImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementImageResponse> {
+		public func patch(_ body: ASC.GameCenterAchievementImageUpdateRequest) -> Request<ASC.GameCenterAchievementImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterAchievementImages_updateInstance")
 		}
 

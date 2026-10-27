@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipDefaultExperienceLocalizations.WithID.Relationsh
 		/// Path: `/v1/appClipDefaultExperienceLocalizations/{id}/relationships/appClipHeaderImage`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse> {
+		public var get: Request<ASC.AppClipDefaultExperienceLocalizationAppClipHeaderImageLinkageResponse> {
 			Request(path: path, method: "GET", id: "appClipDefaultExperienceLocalizations_appClipHeaderImage_getToOneRelationship")
 		}
 	}

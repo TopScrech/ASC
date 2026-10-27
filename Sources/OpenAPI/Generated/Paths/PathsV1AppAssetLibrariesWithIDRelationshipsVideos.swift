@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppAssetLibraries.WithID.Relationships {
 		/// Path: `/v1/appAssetLibraries/{id}/relationships/videos`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryVideosLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppAssetLibraryVideosLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appAssetLibraries_videos_getToManyRelationship")
 		}
 

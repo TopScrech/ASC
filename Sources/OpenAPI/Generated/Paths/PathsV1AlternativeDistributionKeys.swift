@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/alternativeDistributionKeys`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionKeysResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AlternativeDistributionKeysResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "alternativeDistributionKeys_getCollection")
 		}
 
@@ -41,7 +41,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AlternativeDistributionKeyCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionKeyResponse> {
+		public func post(_ body: ASC.AlternativeDistributionKeyCreateRequest) -> Request<ASC.AlternativeDistributionKeyResponse> {
 			Request(path: path, method: "POST", body: body, id: "alternativeDistributionKeys_createInstance")
 		}
 	}

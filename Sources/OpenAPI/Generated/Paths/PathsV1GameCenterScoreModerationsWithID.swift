@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterScoreModerations {
 		/// Path: `/v1/gameCenterScoreModerations/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterScoreModerationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterScoreModerationResponse> {
+		public func patch(_ body: ASC.GameCenterScoreModerationUpdateRequest) -> Request<ASC.GameCenterScoreModerationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterScoreModerations_updateInstance")
 		}
 	}

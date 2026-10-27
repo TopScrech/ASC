@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterEnabledVersions.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterEnabledVersionCompatibleVersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterEnabledVersionCompatibleVersionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterEnabledVersions_compatibleVersions_getToManyRelationship")
 		}
 
@@ -25,17 +25,17 @@ extension APIEndpoint.V1.GameCenterEnabledVersions.WithID.Relationships {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: ASC.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterEnabledVersions_compatibleVersions_createToManyRelationship")
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterEnabledVersions_compatibleVersions_replaceToManyRelationship")
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func delete(_ body: AppStoreConnect_Swift_SDK.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.GameCenterEnabledVersionCompatibleVersionsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "gameCenterEnabledVersions_compatibleVersions_deleteToManyRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Webhooks {
 		/// Path: `/v1/webhooks/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.WebhookResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.WebhookResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "webhooks_getInstance")
 		}
 
@@ -110,7 +110,7 @@ extension APIEndpoint.V1.Webhooks {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.WebhookUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.WebhookResponse> {
+		public func patch(_ body: ASC.WebhookUpdateRequest) -> Request<ASC.WebhookResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "webhooks_updateInstance")
 		}
 

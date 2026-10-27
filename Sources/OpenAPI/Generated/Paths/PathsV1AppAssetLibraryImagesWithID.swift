@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppAssetLibraryImages {
 		/// Path: `/v1/appAssetLibraryImages/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryImageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppAssetLibraryImageResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appAssetLibraryImages_getInstance")
 		}
 
@@ -75,7 +75,7 @@ extension APIEndpoint.V1.AppAssetLibraryImages {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppAssetLibraryImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryImageResponse> {
+		public func patch(_ body: ASC.AppAssetLibraryImageUpdateRequest) -> Request<ASC.AppAssetLibraryImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appAssetLibraryImages_updateInstance")
 		}
 

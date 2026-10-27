@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/betaFeedbackScreenshotSubmissions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppBetaFeedbackScreenshotSubmissionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppBetaFeedbackScreenshotSubmissionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "apps_betaFeedbackScreenshotSubmissions_getToManyRelationship")
 		}
 

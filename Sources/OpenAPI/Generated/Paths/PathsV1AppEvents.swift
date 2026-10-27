@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appEvents`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppEventCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEventResponse> {
+		public func post(_ body: ASC.AppEventCreateRequest) -> Request<ASC.AppEventResponse> {
 			Request(path: path, method: "POST", body: body, id: "appEvents_createInstance")
 		}
 	}

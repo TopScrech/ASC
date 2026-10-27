@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/gameCenterActivityVersions`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterActivityVersionCreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterActivityVersionResponse> {
+		public func post(_ body: ASC.GameCenterActivityVersionCreateRequest) -> Request<ASC.GameCenterActivityVersionResponse> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterActivityVersions_createInstance")
 		}
 	}

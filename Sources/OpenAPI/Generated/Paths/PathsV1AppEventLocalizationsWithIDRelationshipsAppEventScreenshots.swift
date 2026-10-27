@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppEventLocalizations.WithID.Relationships {
 		/// Path: `/v1/appEventLocalizations/{id}/relationships/appEventScreenshots`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventLocalizationAppEventScreenshotsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppEventLocalizationAppEventScreenshotsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appEventLocalizations_appEventScreenshots_getToManyRelationship")
 		}
 

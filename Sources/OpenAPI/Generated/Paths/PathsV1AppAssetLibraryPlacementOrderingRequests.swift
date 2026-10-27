@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appAssetLibraryPlacementOrderingRequests`
 		public let path: String
 
-		public func post(parameters: PostParameters? = nil, _ body: AppStoreConnect_Swift_SDK.AppAssetLibraryPlacementOrderingRequestCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryPlacementOrderingRequestResponse> {
+		public func post(parameters: PostParameters? = nil, _ body: ASC.AppAssetLibraryPlacementOrderingRequestCreateRequest) -> Request<ASC.AppAssetLibraryPlacementOrderingRequestResponse> {
 			Request(path: path, method: "POST", query: parameters?.asQuery, body: body, id: "appAssetLibraryPlacementOrderingRequests_createInstance")
 		}
 

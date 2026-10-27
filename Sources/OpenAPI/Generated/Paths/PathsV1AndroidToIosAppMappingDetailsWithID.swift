@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AndroidToIosAppMappingDetails {
 		/// Path: `/v1/androidToIosAppMappingDetails/{id}`
 		public let path: String
 
-		public func get(fieldsAndroidToIosAppMappingDetails: [FieldsAndroidToIosAppMappingDetails]? = nil) -> Request<AppStoreConnect_Swift_SDK.AndroidToIosAppMappingDetailResponse> {
+		public func get(fieldsAndroidToIosAppMappingDetails: [FieldsAndroidToIosAppMappingDetails]? = nil) -> Request<ASC.AndroidToIosAppMappingDetailResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAndroidToIosAppMappingDetails), id: "androidToIosAppMappingDetails_getInstance")
 		}
 
@@ -28,7 +28,7 @@ extension APIEndpoint.V1.AndroidToIosAppMappingDetails {
 			case appSigningKeyPublicCertificateSha256Fingerprints
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AndroidToIosAppMappingDetailUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AndroidToIosAppMappingDetailResponse> {
+		public func patch(_ body: ASC.AndroidToIosAppMappingDetailUpdateRequest) -> Request<ASC.AndroidToIosAppMappingDetailResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "androidToIosAppMappingDetails_updateInstance")
 		}
 

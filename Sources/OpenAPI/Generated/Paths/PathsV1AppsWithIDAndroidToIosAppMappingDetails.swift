@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID {
 		/// Path: `/v1/apps/{id}/androidToIosAppMappingDetails`
 		public let path: String
 
-		public func get(fieldsAndroidToIosAppMappingDetails: [FieldsAndroidToIosAppMappingDetails]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AndroidToIosAppMappingDetailsResponse> {
+		public func get(fieldsAndroidToIosAppMappingDetails: [FieldsAndroidToIosAppMappingDetails]? = nil, limit: Int? = nil) -> Request<ASC.AndroidToIosAppMappingDetailsResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAndroidToIosAppMappingDetails, limit), id: "apps_androidToIosAppMappingDetails_getToManyRelated")
 		}
 

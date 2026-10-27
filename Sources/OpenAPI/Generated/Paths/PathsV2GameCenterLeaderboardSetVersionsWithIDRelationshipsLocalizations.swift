@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboardSetVersions.WithID.Relationships {
 		/// Path: `/v2/gameCenterLeaderboardSetVersions/{id}/relationships/localizations`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetVersionV2LocalizationsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterLeaderboardSetVersionV2LocalizationsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterLeaderboardSetVersionsV2_localizations_getToManyRelationship")
 		}
 

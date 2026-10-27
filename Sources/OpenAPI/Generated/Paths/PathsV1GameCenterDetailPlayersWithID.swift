@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterDetailPlayers {
 		/// Path: `/v1/gameCenterDetailPlayers/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterDetailPlayerUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterDetailPlayerResponse> {
+		public func patch(_ body: ASC.GameCenterDetailPlayerUpdateRequest) -> Request<ASC.GameCenterDetailPlayerResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterDetailPlayers_updateInstance")
 		}
 	}

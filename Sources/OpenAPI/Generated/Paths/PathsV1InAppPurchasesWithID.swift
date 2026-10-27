@@ -14,7 +14,7 @@ extension APIEndpoint.V1.InAppPurchases {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchases_getInstance")
 		}
 

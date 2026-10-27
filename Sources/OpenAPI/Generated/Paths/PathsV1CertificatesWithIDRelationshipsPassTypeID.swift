@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Certificates.WithID.Relationships {
 		/// Path: `/v1/certificates/{id}/relationships/passTypeId`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.CertificatePassTypeIDLinkageResponse> {
+		public var get: Request<ASC.CertificatePassTypeIDLinkageResponse> {
 			Request(path: path, method: "GET", id: "certificates_passTypeId_getToOneRelationship")
 		}
 	}

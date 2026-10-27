@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Builds.WithID {
 		/// Path: `/v1/builds/{id}/diagnosticSignatures`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.DiagnosticSignaturesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.DiagnosticSignaturesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "builds_diagnosticSignatures_getToManyRelated")
 		}
 

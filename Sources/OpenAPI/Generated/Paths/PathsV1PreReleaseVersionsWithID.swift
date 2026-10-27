@@ -13,7 +13,7 @@ extension APIEndpoint.V1.PreReleaseVersions {
 		/// Path: `/v1/preReleaseVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.PrereleaseVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.PrereleaseVersionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "preReleaseVersions_getInstance")
 		}
 

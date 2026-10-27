@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseVersions.WithID.Relationships {
 		/// Path: `/v1/inAppPurchaseVersions/{id}/relationships/images`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseVersionImagesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.InAppPurchaseVersionImagesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "inAppPurchaseVersions_images_getToManyRelationship")
 		}
 

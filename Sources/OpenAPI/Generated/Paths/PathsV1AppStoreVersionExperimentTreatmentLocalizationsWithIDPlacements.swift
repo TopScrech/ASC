@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersionExperimentTreatmentLocalizations.WithID 
 		/// Path: `/v1/appStoreVersionExperimentTreatmentLocalizations/{id}/placements`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryPlacementsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppAssetLibraryPlacementsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersionExperimentTreatmentLocalizations_placements_getToManyRelated")
 		}
 

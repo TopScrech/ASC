@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipAdvancedExperienceImages {
 		/// Path: `/v1/appClipAdvancedExperienceImages/{id}`
 		public let path: String
 
-		public func get(fieldsAppClipAdvancedExperienceImages: [FieldsAppClipAdvancedExperienceImages]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipAdvancedExperienceImageResponse> {
+		public func get(fieldsAppClipAdvancedExperienceImages: [FieldsAppClipAdvancedExperienceImages]? = nil) -> Request<ASC.AppClipAdvancedExperienceImageResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAppClipAdvancedExperienceImages), id: "appClipAdvancedExperienceImages_getInstance")
 		}
 
@@ -32,7 +32,7 @@ extension APIEndpoint.V1.AppClipAdvancedExperienceImages {
 			case assetDeliveryState
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppClipAdvancedExperienceImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipAdvancedExperienceImageResponse> {
+		public func patch(_ body: ASC.AppClipAdvancedExperienceImageUpdateRequest) -> Request<ASC.AppClipAdvancedExperienceImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appClipAdvancedExperienceImages_updateInstance")
 		}
 	}

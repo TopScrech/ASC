@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterActivityImages {
 		/// Path: `/v1/gameCenterActivityImages/{id}`
 		public let path: String
 
-		public func get(fieldsGameCenterActivityImages: [FieldsGameCenterActivityImages]? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterActivityImageResponse> {
+		public func get(fieldsGameCenterActivityImages: [FieldsGameCenterActivityImages]? = nil) -> Request<ASC.GameCenterActivityImageResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsGameCenterActivityImages), id: "gameCenterActivityImages_getInstance")
 		}
 
@@ -31,7 +31,7 @@ extension APIEndpoint.V1.GameCenterActivityImages {
 			case assetDeliveryState
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterActivityImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterActivityImageResponse> {
+		public func patch(_ body: ASC.GameCenterActivityImageUpdateRequest) -> Request<ASC.GameCenterActivityImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterActivityImages_updateInstance")
 		}
 

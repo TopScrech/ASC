@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppEventVideoClips {
 		/// Path: `/v1/appEventVideoClips/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventVideoClipResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppEventVideoClipResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appEventVideoClips_getInstance")
 		}
 
@@ -66,7 +66,7 @@ extension APIEndpoint.V1.AppEventVideoClips {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppEventVideoClipUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEventVideoClipResponse> {
+		public func patch(_ body: ASC.AppEventVideoClipUpdateRequest) -> Request<ASC.AppEventVideoClipResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appEventVideoClips_updateInstance")
 		}
 

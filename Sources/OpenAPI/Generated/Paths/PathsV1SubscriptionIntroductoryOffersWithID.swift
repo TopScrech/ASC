@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionIntroductoryOffers {
 		/// Path: `/v1/subscriptionIntroductoryOffers/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionIntroductoryOfferUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionIntroductoryOfferResponse> {
+		public func patch(_ body: ASC.SubscriptionIntroductoryOfferUpdateRequest) -> Request<ASC.SubscriptionIntroductoryOfferResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionIntroductoryOffers_updateInstance")
 		}
 

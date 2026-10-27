@@ -13,7 +13,7 @@ extension APIEndpoint.V1.WinBackOffers {
 		/// Path: `/v1/winBackOffers/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.WinBackOfferResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.WinBackOfferResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "winBackOffers_getInstance")
 		}
 
@@ -66,7 +66,7 @@ extension APIEndpoint.V1.WinBackOffers {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.WinBackOfferUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.WinBackOfferResponse> {
+		public func patch(_ body: ASC.WinBackOfferUpdateRequest) -> Request<ASC.WinBackOfferResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "winBackOffers_updateInstance")
 		}
 

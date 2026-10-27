@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppAssetLibraries.WithID {
 		/// Path: `/v1/appAssetLibraries/{id}/videos`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryVideosResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppAssetLibraryVideosResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appAssetLibraries_videos_getToManyRelated")
 		}
 

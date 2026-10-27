@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaFeedbackCrashSubmissions {
 		/// Path: `/v1/betaFeedbackCrashSubmissions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaFeedbackCrashSubmissionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BetaFeedbackCrashSubmissionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "betaFeedbackCrashSubmissions_getInstance")
 		}
 

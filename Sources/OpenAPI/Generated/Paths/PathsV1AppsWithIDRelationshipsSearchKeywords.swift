@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/searchKeywords`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppSearchKeywordsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppSearchKeywordsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "apps_searchKeywords_getToManyRelationship")
 		}
 

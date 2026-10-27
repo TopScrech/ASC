@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaGroups.WithID.Metrics {
 		/// Path: `/v1/betaGroups/{id}/metrics/publicLinkUsages`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaPublicLinkUsagesV1MetricResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.BetaPublicLinkUsagesV1MetricResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "betaGroups_publicLinkUsages_getMetrics")
 		}
 

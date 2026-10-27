@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildBundles.WithID {
 		/// Path: `/v1/buildBundles/{id}/appClipDomainDebugStatus`
 		public let path: String
 
-		public func get(fieldsAppClipDomainStatuses: [FieldsAppClipDomainStatuses]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipDomainStatusResponse> {
+		public func get(fieldsAppClipDomainStatuses: [FieldsAppClipDomainStatuses]? = nil) -> Request<ASC.AppClipDomainStatusResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAppClipDomainStatuses), id: "buildBundles_appClipDomainDebugStatus_getToOneRelated")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Users {
 		/// Path: `/v1/users/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.UserResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.UserResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "users_getInstance")
 		}
 
@@ -114,7 +114,7 @@ extension APIEndpoint.V1.Users {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.UserUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.UserResponse> {
+		public func patch(_ body: ASC.UserUpdateRequest) -> Request<ASC.UserResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "users_updateInstance")
 		}
 

@@ -14,7 +14,7 @@ extension APIEndpoint.V1.AppStoreVersions.WithID {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionSubmissionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreVersionSubmissionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersions_appStoreVersionSubmission_getToOneRelated")
 		}
 

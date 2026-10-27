@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildUploadFiles {
 		/// Path: `/v1/buildUploadFiles/{id}`
 		public let path: String
 
-		public func get(fieldsBuildUploadFiles: [FieldsBuildUploadFiles]? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildUploadFileResponse> {
+		public func get(fieldsBuildUploadFiles: [FieldsBuildUploadFiles]? = nil) -> Request<ASC.BuildUploadFileResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsBuildUploadFiles), id: "buildUploadFiles_getInstance")
 		}
 
@@ -34,7 +34,7 @@ extension APIEndpoint.V1.BuildUploadFiles {
 			case uti
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BuildUploadFileUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BuildUploadFileResponse> {
+		public func patch(_ body: ASC.BuildUploadFileUpdateRequest) -> Request<ASC.BuildUploadFileResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "buildUploadFiles_updateInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appEncryptionDeclarations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppEncryptionDeclarationsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appEncryptionDeclarations_getCollection")
 		}
 
@@ -190,7 +190,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppEncryptionDeclarationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationResponse> {
+		public func post(_ body: ASC.AppEncryptionDeclarationCreateRequest) -> Request<ASC.AppEncryptionDeclarationResponse> {
 			Request(path: path, method: "POST", body: body, id: "appEncryptionDeclarations_createInstance")
 		}
 	}

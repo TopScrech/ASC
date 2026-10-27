@@ -13,8 +13,8 @@
 		848494CD287C8E5D008805C2 /* AppsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848494BB287C8E5C008805C2 /* AppsListView.swift */; };
 		848494CE287C8E5D008805C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848494BC287C8E5D008805C2 /* Assets.xcassets */; };
 		848494CF287C8E5D008805C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848494BC287C8E5D008805C2 /* Assets.xcassets */; };
-		848494DE287C8FAB008805C2 /* AppStoreConnect-Swift-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 848494DD287C8FAB008805C2 /* AppStoreConnect-Swift-SDK */; };
-		848494E0287C8FAE008805C2 /* AppStoreConnect-Swift-SDK in Frameworks */ = {isa = PBXBuildFile; productRef = 848494DF287C8FAE008805C2 /* AppStoreConnect-Swift-SDK */; };
+		848494DE287C8FAB008805C2 /* ASC in Frameworks */ = {isa = PBXBuildFile; productRef = 848494DD287C8FAB008805C2 /* ASC */; };
+		848494E0287C8FAE008805C2 /* ASC in Frameworks */ = {isa = PBXBuildFile; productRef = 848494DF287C8FAE008805C2 /* ASC */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848494DE287C8FAB008805C2 /* AppStoreConnect-Swift-SDK in Frameworks */,
+				848494DE287C8FAB008805C2 /* ASC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				848494E0287C8FAE008805C2 /* AppStoreConnect-Swift-SDK in Frameworks */,
+				848494E0287C8FAE008805C2 /* ASC in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +109,7 @@
 			);
 			name = "AppStoreConnectAPIExample (iOS)";
 			packageProductDependencies = (
-				848494DD287C8FAB008805C2 /* AppStoreConnect-Swift-SDK */,
+				848494DD287C8FAB008805C2 /* ASC */,
 			);
 			productName = "AppStoreConnectAPIExample (iOS)";
 			productReference = 848494C1287C8E5D008805C2 /* AppStoreConnectAPIExample.app */;
@@ -129,7 +129,7 @@
 			);
 			name = "AppStoreConnectAPIExample (macOS)";
 			packageProductDependencies = (
-				848494DF287C8FAE008805C2 /* AppStoreConnect-Swift-SDK */,
+				848494DF287C8FAE008805C2 /* ASC */,
 			);
 			productName = "AppStoreConnectAPIExample (macOS)";
 			productReference = 848494C7287C8E5D008805C2 /* AppStoreConnectAPIExample.app */;
@@ -472,13 +472,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		848494DD287C8FAB008805C2 /* AppStoreConnect-Swift-SDK */ = {
+		848494DD287C8FAB008805C2 /* ASC */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = "AppStoreConnect-Swift-SDK";
+			productName = "ASC";
 		};
-		848494DF287C8FAE008805C2 /* AppStoreConnect-Swift-SDK */ = {
+		848494DF287C8FAE008805C2 /* ASC */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = "AppStoreConnect-Swift-SDK";
+			productName = "ASC";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

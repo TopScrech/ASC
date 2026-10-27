@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/alternativeDistributionPackages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AlternativeDistributionPackageCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionPackageResponse> {
+		public func post(_ body: ASC.AlternativeDistributionPackageCreateRequest) -> Request<ASC.AlternativeDistributionPackageResponse> {
 			Request(path: path, method: "POST", body: body, id: "alternativeDistributionPackages_createInstance")
 		}
 	}

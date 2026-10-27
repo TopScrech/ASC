@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Profiles.WithID {
 		/// Path: `/v1/profiles/{id}/certificates`
 		public let path: String
 
-		public func get(fieldsCertificates: [FieldsCertificates]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.CertificatesWithoutIncludesResponse> {
+		public func get(fieldsCertificates: [FieldsCertificates]? = nil, limit: Int? = nil) -> Request<ASC.CertificatesWithoutIncludesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsCertificates, limit), id: "profiles_certificates_getToManyRelated")
 		}
 

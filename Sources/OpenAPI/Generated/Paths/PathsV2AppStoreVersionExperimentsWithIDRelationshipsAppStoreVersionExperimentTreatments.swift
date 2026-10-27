@@ -13,7 +13,7 @@ extension APIEndpoint.V2.AppStoreVersionExperiments.WithID.Relationships {
 		/// Path: `/v2/appStoreVersionExperiments/{id}/relationships/appStoreVersionExperimentTreatments`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppStoreVersionExperimentV2AppStoreVersionExperimentTreatmentsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appStoreVersionExperimentsV2_appStoreVersionExperimentTreatments_getToManyRelationship")
 		}
 

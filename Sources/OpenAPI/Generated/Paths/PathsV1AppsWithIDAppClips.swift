@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID {
 		/// Path: `/v1/apps/{id}/appClips`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppClipsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "apps_appClips_getToManyRelated")
 		}
 

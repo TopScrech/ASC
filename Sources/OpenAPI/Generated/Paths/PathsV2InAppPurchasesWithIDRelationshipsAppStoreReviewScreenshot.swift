@@ -13,7 +13,7 @@ extension APIEndpoint.V2.InAppPurchases.WithID.Relationships {
 		/// Path: `/v2/inAppPurchases/{id}/relationships/appStoreReviewScreenshot`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.InAppPurchaseV2AppStoreReviewScreenshotLinkageResponse> {
+		public var get: Request<ASC.InAppPurchaseV2AppStoreReviewScreenshotLinkageResponse> {
 			Request(path: path, method: "GET", id: "inAppPurchasesV2_appStoreReviewScreenshot_getToOneRelationship")
 		}
 	}

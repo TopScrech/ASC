@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersions.WithID.Relationships {
 		/// Path: `/v1/appStoreVersions/{id}/relationships/routingAppCoverage`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppStoreVersionRoutingAppCoverageLinkageResponse> {
+		public var get: Request<ASC.AppStoreVersionRoutingAppCoverageLinkageResponse> {
 			Request(path: path, method: "GET", id: "appStoreVersions_routingAppCoverage_getToOneRelationship")
 		}
 	}

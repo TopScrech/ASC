@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildBundles.WithID {
 		/// Path: `/v1/buildBundles/{id}/betaAppClipInvocations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaAppClipInvocationsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BetaAppClipInvocationsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "buildBundles_betaAppClipInvocations_getToManyRelated")
 		}
 

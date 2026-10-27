@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterLeaderboards {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterLeaderboardResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterLeaderboards_getInstance")
 		}
 
@@ -200,7 +200,7 @@ extension APIEndpoint.V1.GameCenterLeaderboards {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardResponse> {
+		public func patch(_ body: ASC.GameCenterLeaderboardUpdateRequest) -> Request<ASC.GameCenterLeaderboardResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboards_updateInstance")
 		}
 

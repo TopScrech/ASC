@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Builds.WithID {
 		/// Path: `/v1/builds/{id}/betaBuildLocalizations`
 		public let path: String
 
-		public func get(fieldsBetaBuildLocalizations: [FieldsBetaBuildLocalizations]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaBuildLocalizationsWithoutIncludesResponse> {
+		public func get(fieldsBetaBuildLocalizations: [FieldsBetaBuildLocalizations]? = nil, limit: Int? = nil) -> Request<ASC.BetaBuildLocalizationsWithoutIncludesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsBetaBuildLocalizations, limit), id: "builds_betaBuildLocalizations_getToManyRelated")
 		}
 

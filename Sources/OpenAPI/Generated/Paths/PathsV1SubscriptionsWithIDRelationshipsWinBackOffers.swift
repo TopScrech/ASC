@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Subscriptions.WithID.Relationships {
 		/// Path: `/v1/subscriptions/{id}/relationships/winBackOffers`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionWinBackOffersLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.SubscriptionWinBackOffersLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "subscriptions_winBackOffers_getToManyRelationship")
 		}
 

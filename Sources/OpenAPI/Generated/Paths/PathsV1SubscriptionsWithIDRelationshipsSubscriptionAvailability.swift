@@ -14,7 +14,7 @@ extension APIEndpoint.V1.Subscriptions.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public var get: Request<AppStoreConnect_Swift_SDK.SubscriptionSubscriptionAvailabilityLinkageResponse> {
+		public var get: Request<ASC.SubscriptionSubscriptionAvailabilityLinkageResponse> {
 			Request(path: path, method: "GET", id: "subscriptions_subscriptionAvailability_getToOneRelationship")
 		}
 	}

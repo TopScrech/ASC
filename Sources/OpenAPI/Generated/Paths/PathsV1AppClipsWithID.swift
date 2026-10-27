@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClips {
 		/// Path: `/v1/appClips/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppClipResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appClips_getInstance")
 		}
 

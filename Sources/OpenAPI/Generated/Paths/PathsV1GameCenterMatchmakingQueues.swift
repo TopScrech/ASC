@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/gameCenterMatchmakingQueues`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterMatchmakingQueuesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterMatchmakingQueuesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterMatchmakingQueues_getCollection")
 		}
 
@@ -62,7 +62,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterMatchmakingQueueCreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterMatchmakingQueueResponse> {
+		public func post(_ body: ASC.GameCenterMatchmakingQueueCreateRequest) -> Request<ASC.GameCenterMatchmakingQueueResponse> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterMatchmakingQueues_createInstance")
 		}
 	}

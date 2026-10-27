@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterLeaderboardLocalizations {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterLeaderboardLocalizationResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterLeaderboardLocalizations_getInstance")
 		}
 
@@ -91,7 +91,7 @@ extension APIEndpoint.V1.GameCenterLeaderboardLocalizations {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardLocalizationResponse> {
+		public func patch(_ body: ASC.GameCenterLeaderboardLocalizationUpdateRequest) -> Request<ASC.GameCenterLeaderboardLocalizationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardLocalizations_updateInstance")
 		}
 

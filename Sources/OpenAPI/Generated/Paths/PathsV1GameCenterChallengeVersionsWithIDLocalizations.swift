@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterChallengeVersions.WithID {
 		/// Path: `/v1/gameCenterChallengeVersions/{id}/localizations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterChallengeLocalizationsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterChallengeLocalizationsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterChallengeVersions_localizations_getToManyRelated")
 		}
 

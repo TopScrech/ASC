@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Profiles.WithID {
 		/// Path: `/v1/profiles/{id}/devices`
 		public let path: String
 
-		public func get(fieldsDevices: [FieldsDevices]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.DevicesWithoutIncludesResponse> {
+		public func get(fieldsDevices: [FieldsDevices]? = nil, limit: Int? = nil) -> Request<ASC.DevicesWithoutIncludesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsDevices, limit), id: "profiles_devices_getToManyRelated")
 		}
 

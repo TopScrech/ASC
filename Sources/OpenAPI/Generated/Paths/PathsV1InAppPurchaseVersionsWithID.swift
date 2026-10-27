@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseVersions {
 		/// Path: `/v1/inAppPurchaseVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseVersionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseVersions_getInstance")
 		}
 

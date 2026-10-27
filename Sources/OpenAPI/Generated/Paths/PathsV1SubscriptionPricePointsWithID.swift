@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionPricePoints {
 		/// Path: `/v1/subscriptionPricePoints/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPricePointResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionPricePointResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptionPricePoints_getInstance")
 		}
 

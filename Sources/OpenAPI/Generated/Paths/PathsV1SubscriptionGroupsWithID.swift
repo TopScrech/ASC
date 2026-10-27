@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionGroups {
 		/// Path: `/v1/subscriptionGroups/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGroupResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionGroupResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptionGroups_getInstance")
 		}
 
@@ -106,7 +106,7 @@ extension APIEndpoint.V1.SubscriptionGroups {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionGroupUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGroupResponse> {
+		public func patch(_ body: ASC.SubscriptionGroupUpdateRequest) -> Request<ASC.SubscriptionGroupResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionGroups_updateInstance")
 		}
 

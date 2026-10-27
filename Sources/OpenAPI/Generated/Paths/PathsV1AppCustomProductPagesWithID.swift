@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCustomProductPages {
 		/// Path: `/v1/appCustomProductPages/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppCustomProductPageResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appCustomProductPages_getInstance")
 		}
 
@@ -124,7 +124,7 @@ extension APIEndpoint.V1.AppCustomProductPages {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppCustomProductPageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageResponse> {
+		public func patch(_ body: ASC.AppCustomProductPageUpdateRequest) -> Request<ASC.AppCustomProductPageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appCustomProductPages_updateInstance")
 		}
 

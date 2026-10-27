@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppEventScreenshots {
 		/// Path: `/v1/appEventScreenshots/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEventScreenshotResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppEventScreenshotResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appEventScreenshots_getInstance")
 		}
 
@@ -63,7 +63,7 @@ extension APIEndpoint.V1.AppEventScreenshots {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppEventScreenshotUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEventScreenshotResponse> {
+		public func patch(_ body: ASC.AppEventScreenshotUpdateRequest) -> Request<ASC.AppEventScreenshotResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appEventScreenshots_updateInstance")
 		}
 

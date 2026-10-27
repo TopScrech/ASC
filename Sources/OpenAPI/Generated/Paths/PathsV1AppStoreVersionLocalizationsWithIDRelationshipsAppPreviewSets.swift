@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersionLocalizations.WithID.Relationships {
 		/// Path: `/v1/appStoreVersionLocalizations/{id}/relationships/appPreviewSets`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionLocalizationAppPreviewSetsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppStoreVersionLocalizationAppPreviewSetsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appStoreVersionLocalizations_appPreviewSets_getToManyRelationship")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V3.AppPricePoints {
 		/// Path: `/v3/appPricePoints/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPricePointV3Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppPricePointV3Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appPricePointsV3_getInstance")
 		}
 

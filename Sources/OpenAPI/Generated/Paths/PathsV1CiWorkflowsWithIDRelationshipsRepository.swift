@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiWorkflows.WithID.Relationships {
 		/// Path: `/v1/ciWorkflows/{id}/relationships/repository`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.CiWorkflowRepositoryLinkageResponse> {
+		public var get: Request<ASC.CiWorkflowRepositoryLinkageResponse> {
 			Request(path: path, method: "GET", id: "ciWorkflows_repository_getToOneRelationship")
 		}
 	}

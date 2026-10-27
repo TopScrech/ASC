@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/alternativeDistributionDomains`
 		public let path: String
 
-		public func get(fieldsAlternativeDistributionDomains: [FieldsAlternativeDistributionDomains]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionDomainsResponse> {
+		public func get(fieldsAlternativeDistributionDomains: [FieldsAlternativeDistributionDomains]? = nil, limit: Int? = nil) -> Request<ASC.AlternativeDistributionDomainsResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAlternativeDistributionDomains, limit), id: "alternativeDistributionDomains_getCollection")
 		}
 
@@ -30,7 +30,7 @@ extension APIEndpoint.V1 {
 			case createdDate
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AlternativeDistributionDomainCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionDomainResponse> {
+		public func post(_ body: ASC.AlternativeDistributionDomainCreateRequest) -> Request<ASC.AlternativeDistributionDomainResponse> {
 			Request(path: path, method: "POST", body: body, id: "alternativeDistributionDomains_createInstance")
 		}
 	}

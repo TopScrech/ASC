@@ -14,7 +14,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppInAppPurchasesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppInAppPurchasesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "apps_inAppPurchases_getToManyRelationship")
 		}
 

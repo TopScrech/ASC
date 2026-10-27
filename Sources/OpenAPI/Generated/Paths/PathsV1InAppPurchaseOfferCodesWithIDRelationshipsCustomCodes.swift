@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseOfferCodes.WithID.Relationships {
 		/// Path: `/v1/inAppPurchaseOfferCodes/{id}/relationships/customCodes`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeCustomCodesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.InAppPurchaseOfferCodeCustomCodesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "inAppPurchaseOfferCodes_customCodes_getToManyRelationship")
 		}
 

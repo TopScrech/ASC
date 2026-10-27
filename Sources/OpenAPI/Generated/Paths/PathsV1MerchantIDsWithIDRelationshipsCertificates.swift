@@ -13,7 +13,7 @@ extension APIEndpoint.V1.MerchantIDs.WithID.Relationships {
 		/// Path: `/v1/merchantIds/{id}/relationships/certificates`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.MerchantIDCertificatesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.MerchantIDCertificatesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "merchantIds_certificates_getToManyRelationship")
 		}
 

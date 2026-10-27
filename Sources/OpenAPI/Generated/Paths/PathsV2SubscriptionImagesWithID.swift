@@ -13,7 +13,7 @@ extension APIEndpoint.V2.SubscriptionImages {
 		/// Path: `/v2/subscriptionImages/{id}`
 		public let path: String
 
-		public func get(fieldsSubscriptionImages: [FieldsSubscriptionImages]? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionImageV2Response> {
+		public func get(fieldsSubscriptionImages: [FieldsSubscriptionImages]? = nil) -> Request<ASC.SubscriptionImageV2Response> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsSubscriptionImages), id: "subscriptionImagesV2_getInstance")
 		}
 
@@ -32,7 +32,7 @@ extension APIEndpoint.V2.SubscriptionImages {
 			case assetDeliveryState
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionImageV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionImageV2Response> {
+		public func patch(_ body: ASC.SubscriptionImageV2UpdateRequest) -> Request<ASC.SubscriptionImageV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionImagesV2_updateInstance")
 		}
 

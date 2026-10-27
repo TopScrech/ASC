@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/endUserLicenseAgreements`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.EndUserLicenseAgreementCreateRequest) -> Request<AppStoreConnect_Swift_SDK.EndUserLicenseAgreementResponse> {
+		public func post(_ body: ASC.EndUserLicenseAgreementCreateRequest) -> Request<ASC.EndUserLicenseAgreementResponse> {
 			Request(path: path, method: "POST", body: body, id: "endUserLicenseAgreements_createInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/gameCenterLeaderboards`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardV2CreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardV2Response> {
+		public func post(_ body: ASC.GameCenterLeaderboardV2CreateRequest) -> Request<ASC.GameCenterLeaderboardV2Response> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterLeaderboardsV2_createInstance")
 		}
 	}

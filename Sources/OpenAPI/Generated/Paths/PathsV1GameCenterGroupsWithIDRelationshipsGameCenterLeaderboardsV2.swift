@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterGroups.WithID.Relationships {
 		/// Path: `/v1/gameCenterGroups/{id}/relationships/gameCenterLeaderboardsV2`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterGroupGameCenterLeaderboardsV2LinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterGroupGameCenterLeaderboardsV2LinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterGroups_gameCenterLeaderboardsV2_getToManyRelationship")
 		}
 
@@ -23,7 +23,7 @@ extension APIEndpoint.V1.GameCenterGroups.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterGroupGameCenterLeaderboardsV2LinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.GameCenterGroupGameCenterLeaderboardsV2LinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterGroups_gameCenterLeaderboardsV2_replaceToManyRelationship")
 		}
 	}

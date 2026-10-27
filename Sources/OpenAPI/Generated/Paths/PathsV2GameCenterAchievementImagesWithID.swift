@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterAchievementImages {
 		/// Path: `/v2/gameCenterAchievementImages/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementImageV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterAchievementImageV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAchievementImagesV2_getInstance")
 		}
 
@@ -59,7 +59,7 @@ extension APIEndpoint.V2.GameCenterAchievementImages {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterAchievementImageV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementImageV2Response> {
+		public func patch(_ body: ASC.GameCenterAchievementImageV2UpdateRequest) -> Request<ASC.GameCenterAchievementImageV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterAchievementImagesV2_updateInstance")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersions.WithID.Relationships {
 		/// Path: `/v1/appStoreVersions/{id}/relationships/customerReviews`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionCustomerReviewsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppStoreVersionCustomerReviewsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appStoreVersions_customerReviews_getToManyRelationship")
 		}
 

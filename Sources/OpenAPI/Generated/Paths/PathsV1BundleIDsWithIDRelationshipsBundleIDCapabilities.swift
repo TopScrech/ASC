@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BundleIDs.WithID.Relationships {
 		/// Path: `/v1/bundleIds/{id}/relationships/bundleIdCapabilities`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BundleIDBundleIdCapabilitiesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.BundleIDBundleIdCapabilitiesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "bundleIds_bundleIdCapabilities_getToManyRelationship")
 		}
 

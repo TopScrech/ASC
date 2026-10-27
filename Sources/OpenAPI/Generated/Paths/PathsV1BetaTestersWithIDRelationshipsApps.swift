@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaTesters.WithID.Relationships {
 		/// Path: `/v1/betaTesters/{id}/relationships/apps`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaTesterAppsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.BetaTesterAppsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "betaTesters_apps_getToManyRelationship")
 		}
 
@@ -23,7 +23,7 @@ extension APIEndpoint.V1.BetaTesters.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.BetaTesterAppsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.BetaTesterAppsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "betaTesters_apps_deleteToManyRelationship")
 		}
 	}

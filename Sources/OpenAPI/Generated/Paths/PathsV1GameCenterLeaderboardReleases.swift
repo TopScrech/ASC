@@ -14,7 +14,7 @@ extension APIEndpoint.V1 {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardReleaseCreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardReleaseResponse> {
+		public func post(_ body: ASC.GameCenterLeaderboardReleaseCreateRequest) -> Request<ASC.GameCenterLeaderboardReleaseResponse> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterLeaderboardReleases_createInstance")
 		}
 	}

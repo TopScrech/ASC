@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaGroups.WithID.Relationships {
 		/// Path: `/v1/betaGroups/{id}/relationships/betaRecruitmentCriterionCompatibleBuildCheck`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponse> {
+		public var get: Request<ASC.BetaGroupBetaRecruitmentCriterionCompatibleBuildCheckLinkageResponse> {
 			Request(path: path, method: "GET", id: "betaGroups_betaRecruitmentCriterionCompatibleBuildCheck_getToOneRelationship")
 		}
 	}

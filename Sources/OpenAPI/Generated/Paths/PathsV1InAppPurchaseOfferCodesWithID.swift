@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseOfferCodes {
 		/// Path: `/v1/inAppPurchaseOfferCodes/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseOfferCodeResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseOfferCodes_getInstance")
 		}
 
@@ -95,7 +95,7 @@ extension APIEndpoint.V1.InAppPurchaseOfferCodes {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeResponse> {
+		public func patch(_ body: ASC.InAppPurchaseOfferCodeUpdateRequest) -> Request<ASC.InAppPurchaseOfferCodeResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "inAppPurchaseOfferCodes_updateInstance")
 		}
 	}

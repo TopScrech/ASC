@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/analyticsReportRequests`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AnalyticsReportRequestCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AnalyticsReportRequestResponse> {
+		public func post(_ body: ASC.AnalyticsReportRequestCreateRequest) -> Request<ASC.AnalyticsReportRequestResponse> {
 			Request(path: path, method: "POST", body: body, id: "analyticsReportRequests_createInstance")
 		}
 	}

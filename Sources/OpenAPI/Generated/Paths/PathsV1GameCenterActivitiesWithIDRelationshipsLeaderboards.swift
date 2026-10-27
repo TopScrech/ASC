@@ -14,12 +14,12 @@ extension APIEndpoint.V1.GameCenterActivities.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterActivityLeaderboardsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: ASC.GameCenterActivityLeaderboardsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterActivities_leaderboards_createToManyRelationship")
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func delete(_ body: AppStoreConnect_Swift_SDK.GameCenterActivityLeaderboardsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.GameCenterActivityLeaderboardsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "gameCenterActivities_leaderboards_deleteToManyRelationship")
 		}
 	}

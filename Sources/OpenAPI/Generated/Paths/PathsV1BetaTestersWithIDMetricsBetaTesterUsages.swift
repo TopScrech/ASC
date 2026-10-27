@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaTesters.WithID.Metrics {
 		/// Path: `/v1/betaTesters/{id}/metrics/betaTesterUsages`
 		public let path: String
 
-		public func get(parameters: GetParameters) -> Request<AppStoreConnect_Swift_SDK.BetaTesterUsagesV1MetricResponse> {
+		public func get(parameters: GetParameters) -> Request<ASC.BetaTesterUsagesV1MetricResponse> {
 			Request(path: path, method: "GET", query: parameters.asQuery, id: "betaTesters_betaTesterUsages_getMetrics")
 		}
 

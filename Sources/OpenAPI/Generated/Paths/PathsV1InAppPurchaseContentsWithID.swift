@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseContents {
 		/// Path: `/v1/inAppPurchaseContents/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseContentResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseContentResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseContents_getInstance")
 		}
 

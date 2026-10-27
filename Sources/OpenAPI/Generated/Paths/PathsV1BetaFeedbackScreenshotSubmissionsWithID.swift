@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaFeedbackScreenshotSubmissions {
 		/// Path: `/v1/betaFeedbackScreenshotSubmissions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaFeedbackScreenshotSubmissionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BetaFeedbackScreenshotSubmissionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "betaFeedbackScreenshotSubmissions_getInstance")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseVersions.WithID {
 		/// Path: `/v1/inAppPurchaseVersions/{id}/localizations`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationsV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseLocalizationsV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseVersions_localizations_getToManyRelated")
 		}
 

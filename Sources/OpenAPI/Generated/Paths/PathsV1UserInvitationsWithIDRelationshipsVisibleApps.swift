@@ -13,7 +13,7 @@ extension APIEndpoint.V1.UserInvitations.WithID.Relationships {
 		/// Path: `/v1/userInvitations/{id}/relationships/visibleApps`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.UserInvitationVisibleAppsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.UserInvitationVisibleAppsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "userInvitations_visibleApps_getToManyRelationship")
 		}
 

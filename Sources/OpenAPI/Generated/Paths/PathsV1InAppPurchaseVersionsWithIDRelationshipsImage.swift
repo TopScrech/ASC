@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseVersions.WithID.Relationships {
 		/// Path: `/v1/inAppPurchaseVersions/{id}/relationships/image`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.InAppPurchaseVersionImageLinkageResponse> {
+		public var get: Request<ASC.InAppPurchaseVersionImageLinkageResponse> {
 			Request(path: path, method: "GET", id: "inAppPurchaseVersions_image_getToOneRelationship")
 		}
 	}

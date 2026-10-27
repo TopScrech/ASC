@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/inAppPurchaseLocalizations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationV2CreateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationV2Response> {
+		public func post(_ body: ASC.InAppPurchaseLocalizationV2CreateRequest) -> Request<ASC.InAppPurchaseLocalizationV2Response> {
 			Request(path: path, method: "POST", body: body, id: "inAppPurchaseLocalizationsV2_createInstance")
 		}
 	}

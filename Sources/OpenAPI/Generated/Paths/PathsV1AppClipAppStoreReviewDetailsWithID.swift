@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipAppStoreReviewDetails {
 		/// Path: `/v1/appClipAppStoreReviewDetails/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipAppStoreReviewDetailResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppClipAppStoreReviewDetailResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appClipAppStoreReviewDetails_getInstance")
 		}
 
@@ -54,7 +54,7 @@ extension APIEndpoint.V1.AppClipAppStoreReviewDetails {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppClipAppStoreReviewDetailUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipAppStoreReviewDetailResponse> {
+		public func patch(_ body: ASC.AppClipAppStoreReviewDetailUpdateRequest) -> Request<ASC.AppClipAppStoreReviewDetailResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appClipAppStoreReviewDetails_updateInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Profiles.WithID.Relationships {
 		/// Path: `/v1/profiles/{id}/relationships/certificates`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.ProfileCertificatesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.ProfileCertificatesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "profiles_certificates_getToManyRelationship")
 		}
 

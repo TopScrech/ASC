@@ -13,7 +13,7 @@ extension APIEndpoint.V1.ScmPullRequests {
 		/// Path: `/v1/scmPullRequests/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmPullRequestResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.ScmPullRequestResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "scmPullRequests_getInstance")
 		}
 

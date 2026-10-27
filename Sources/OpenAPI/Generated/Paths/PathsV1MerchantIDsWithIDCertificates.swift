@@ -13,7 +13,7 @@ extension APIEndpoint.V1.MerchantIDs.WithID {
 		/// Path: `/v1/merchantIds/{id}/certificates`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CertificatesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.CertificatesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "merchantIds_certificates_getToManyRelated")
 		}
 

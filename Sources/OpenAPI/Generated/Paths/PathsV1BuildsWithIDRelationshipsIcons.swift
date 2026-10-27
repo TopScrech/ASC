@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Builds.WithID.Relationships {
 		/// Path: `/v1/builds/{id}/relationships/icons`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildIconsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.BuildIconsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "builds_icons_getToManyRelationship")
 		}
 

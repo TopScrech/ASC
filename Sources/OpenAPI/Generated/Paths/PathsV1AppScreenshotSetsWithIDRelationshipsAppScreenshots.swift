@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppScreenshotSets.WithID.Relationships {
 		/// Path: `/v1/appScreenshotSets/{id}/relationships/appScreenshots`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppScreenshotSetAppScreenshotsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppScreenshotSetAppScreenshotsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appScreenshotSets_appScreenshots_getToManyRelationship")
 		}
 
@@ -23,7 +23,7 @@ extension APIEndpoint.V1.AppScreenshotSets.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppScreenshotSetAppScreenshotsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.AppScreenshotSetAppScreenshotsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "appScreenshotSets_appScreenshots_replaceToManyRelationship")
 		}
 	}

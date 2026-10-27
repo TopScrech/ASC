@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AlternativeDistributionPackageDeltas {
 		/// Path: `/v1/alternativeDistributionPackageDeltas/{id}`
 		public let path: String
 
-		public func get(fieldsAlternativeDistributionPackageDeltas: [FieldsAlternativeDistributionPackageDeltas]? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionPackageDeltaResponse> {
+		public func get(fieldsAlternativeDistributionPackageDeltas: [FieldsAlternativeDistributionPackageDeltas]? = nil) -> Request<ASC.AlternativeDistributionPackageDeltaResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAlternativeDistributionPackageDeltas), id: "alternativeDistributionPackageDeltas_getInstance")
 		}
 

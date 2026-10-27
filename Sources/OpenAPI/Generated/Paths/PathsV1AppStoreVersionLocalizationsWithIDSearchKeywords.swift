@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersionLocalizations.WithID {
 		/// Path: `/v1/appStoreVersionLocalizations/{id}/searchKeywords`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppKeywordsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppKeywordsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersionLocalizations_searchKeywords_getToManyRelated")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterLeaderboardSetMemberLocalizations {
 		/// Path: `/v1/gameCenterLeaderboardSetMemberLocalizations/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetMemberLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardSetMemberLocalizationResponse> {
+		public func patch(_ body: ASC.GameCenterLeaderboardSetMemberLocalizationUpdateRequest) -> Request<ASC.GameCenterLeaderboardSetMemberLocalizationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboardSetMemberLocalizations_updateInstance")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipHeaderImages {
 		/// Path: `/v1/appClipHeaderImages/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipHeaderImageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppClipHeaderImageResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appClipHeaderImages_getInstance")
 		}
 
@@ -58,7 +58,7 @@ extension APIEndpoint.V1.AppClipHeaderImages {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppClipHeaderImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipHeaderImageResponse> {
+		public func patch(_ body: ASC.AppClipHeaderImageUpdateRequest) -> Request<ASC.AppClipHeaderImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appClipHeaderImages_updateInstance")
 		}
 

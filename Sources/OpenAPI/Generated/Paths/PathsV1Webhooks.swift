@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/webhooks`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.WebhookCreateRequest) -> Request<AppStoreConnect_Swift_SDK.WebhookResponse> {
+		public func post(_ body: ASC.WebhookCreateRequest) -> Request<ASC.WebhookResponse> {
 			Request(path: path, method: "POST", body: body, id: "webhooks_createInstance")
 		}
 	}

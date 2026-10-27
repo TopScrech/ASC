@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BackgroundAssetUploadFiles {
 		/// Path: `/v1/backgroundAssetUploadFiles/{id}`
 		public let path: String
 
-		public func get(fieldsBackgroundAssetUploadFiles: [FieldsBackgroundAssetUploadFiles]? = nil) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetUploadFileResponse> {
+		public func get(fieldsBackgroundAssetUploadFiles: [FieldsBackgroundAssetUploadFiles]? = nil) -> Request<ASC.BackgroundAssetUploadFileResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsBackgroundAssetUploadFiles), id: "backgroundAssetUploadFiles_getInstance")
 		}
 
@@ -34,7 +34,7 @@ extension APIEndpoint.V1.BackgroundAssetUploadFiles {
 			case uploadOperations
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BackgroundAssetUploadFileUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetUploadFileResponse> {
+		public func patch(_ body: ASC.BackgroundAssetUploadFileUpdateRequest) -> Request<ASC.BackgroundAssetUploadFileResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "backgroundAssetUploadFiles_updateInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiWorkflows.WithID.Relationships {
 		/// Path: `/v1/ciWorkflows/{id}/relationships/buildRuns`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.CiWorkflowBuildRunsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.CiWorkflowBuildRunsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "ciWorkflows_buildRuns_getToManyRelationship")
 		}
 

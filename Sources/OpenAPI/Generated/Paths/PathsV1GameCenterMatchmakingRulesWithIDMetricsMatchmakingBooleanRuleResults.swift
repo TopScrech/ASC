@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterMatchmakingRules.WithID.Metrics {
 		/// Path: `/v1/gameCenterMatchmakingRules/{id}/metrics/matchmakingBooleanRuleResults`
 		public let path: String
 
-		public func get(parameters: GetParameters) -> Request<AppStoreConnect_Swift_SDK.GameCenterMatchmakingBooleanRuleResultsV1MetricResponse> {
+		public func get(parameters: GetParameters) -> Request<ASC.GameCenterMatchmakingBooleanRuleResultsV1MetricResponse> {
 			Request(path: path, method: "GET", query: parameters.asQuery, id: "gameCenterMatchmakingRules_matchmakingBooleanRuleResults_getMetrics")
 		}
 

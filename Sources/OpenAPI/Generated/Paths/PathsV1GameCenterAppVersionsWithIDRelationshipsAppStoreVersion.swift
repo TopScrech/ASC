@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterAppVersions.WithID.Relationships {
 		/// Path: `/v1/gameCenterAppVersions/{id}/relationships/appStoreVersion`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.GameCenterAppVersionAppStoreVersionLinkageResponse> {
+		public var get: Request<ASC.GameCenterAppVersionAppStoreVersionLinkageResponse> {
 			Request(path: path, method: "GET", id: "gameCenterAppVersions_appStoreVersion_getToOneRelationship")
 		}
 	}

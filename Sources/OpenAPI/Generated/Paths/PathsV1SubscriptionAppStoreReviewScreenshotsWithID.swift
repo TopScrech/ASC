@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionAppStoreReviewScreenshots {
 		/// Path: `/v1/subscriptionAppStoreReviewScreenshots/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionAppStoreReviewScreenshotResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptionAppStoreReviewScreenshots_getInstance")
 		}
 
@@ -79,7 +79,7 @@ extension APIEndpoint.V1.SubscriptionAppStoreReviewScreenshots {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotResponse> {
+		public func patch(_ body: ASC.SubscriptionAppStoreReviewScreenshotUpdateRequest) -> Request<ASC.SubscriptionAppStoreReviewScreenshotResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionAppStoreReviewScreenshots_updateInstance")
 		}
 

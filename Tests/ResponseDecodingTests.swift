@@ -1,6 +1,6 @@
 import Foundation
 import XCTest
-@testable import AppStoreConnect_Swift_SDK
+@testable import ASC
 
 final class ResponseDecodingTests: XCTestCase {
     // Apple shows object dimensions and calendar-date data points in both metric examples:

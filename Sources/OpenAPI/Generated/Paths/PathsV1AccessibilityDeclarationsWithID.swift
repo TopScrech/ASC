@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AccessibilityDeclarations {
 		/// Path: `/v1/accessibilityDeclarations/{id}`
 		public let path: String
 
-		public func get(fieldsAccessibilityDeclarations: [FieldsAccessibilityDeclarations]? = nil) -> Request<AppStoreConnect_Swift_SDK.AccessibilityDeclarationResponse> {
+		public func get(fieldsAccessibilityDeclarations: [FieldsAccessibilityDeclarations]? = nil) -> Request<ASC.AccessibilityDeclarationResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAccessibilityDeclarations), id: "accessibilityDeclarations_getInstance")
 		}
 
@@ -37,7 +37,7 @@ extension APIEndpoint.V1.AccessibilityDeclarations {
 			case supportsVoiceover
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AccessibilityDeclarationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AccessibilityDeclarationResponse> {
+		public func patch(_ body: ASC.AccessibilityDeclarationUpdateRequest) -> Request<ASC.AccessibilityDeclarationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "accessibilityDeclarations_updateInstance")
 		}
 

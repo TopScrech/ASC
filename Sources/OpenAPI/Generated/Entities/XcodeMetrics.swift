@@ -35,7 +35,7 @@ public struct XcodeMetrics: Codable {
 		public var metricCategories: [MetricCategory]?
 
 		public final class MetricCategory: Codable {
-			public let identifier: AppStoreConnect_Swift_SDK.MetricCategory?
+			public let identifier: ASC.MetricCategory?
 			public let metrics: [Metric]?
 
 			public struct Metric: Codable {
@@ -246,14 +246,14 @@ public struct XcodeMetrics: Codable {
 				}
 			}
 
-			public init(identifier: AppStoreConnect_Swift_SDK.MetricCategory? = nil, metrics: [Metric]? = nil) {
+			public init(identifier: ASC.MetricCategory? = nil, metrics: [Metric]? = nil) {
 				self.identifier = identifier
 				self.metrics = metrics
 			}
 
 			public init(from decoder: Decoder) throws {
 				let values = try decoder.container(keyedBy: StringCodingKey.self)
-				self.identifier = try values.decodeIfPresent(AppStoreConnect_Swift_SDK.MetricCategory.self, forKey: "identifier")
+				self.identifier = try values.decodeIfPresent(ASC.MetricCategory.self, forKey: "identifier")
 				self.metrics = try values.decodeIfPresent([Metric].self, forKey: "metrics")
 			}
 

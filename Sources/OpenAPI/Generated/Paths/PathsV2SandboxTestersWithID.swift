@@ -13,7 +13,7 @@ extension APIEndpoint.V2.SandboxTesters {
 		/// Path: `/v2/sandboxTesters/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SandboxTesterV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SandboxTesterV2Response> {
+		public func patch(_ body: ASC.SandboxTesterV2UpdateRequest) -> Request<ASC.SandboxTesterV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "sandboxTestersV2_updateInstance")
 		}
 	}

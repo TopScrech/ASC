@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionPlanAvailabilities {
 		/// Path: `/v1/subscriptionPlanAvailabilities/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPlanAvailabilityResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionPlanAvailabilityResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptionPlanAvailabilities_getInstance")
 		}
 
@@ -54,7 +54,7 @@ extension APIEndpoint.V1.SubscriptionPlanAvailabilities {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionPlanAvailabilityUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPlanAvailabilityResponse> {
+		public func patch(_ body: ASC.SubscriptionPlanAvailabilityUpdateRequest) -> Request<ASC.SubscriptionPlanAvailabilityResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionPlanAvailabilities_updateInstance")
 		}
 	}

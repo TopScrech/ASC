@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppInfoLocalizations {
 		/// Path: `/v1/appInfoLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppInfoLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppInfoLocalizationResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appInfoLocalizations_getInstance")
 		}
 
@@ -72,7 +72,7 @@ extension APIEndpoint.V1.AppInfoLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppInfoLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppInfoLocalizationResponse> {
+		public func patch(_ body: ASC.AppInfoLocalizationUpdateRequest) -> Request<ASC.AppInfoLocalizationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appInfoLocalizations_updateInstance")
 		}
 

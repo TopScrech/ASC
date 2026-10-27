@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Subscriptions.WithID.Relationships {
 		/// Path: `/v1/subscriptions/{id}/relationships/appStoreReviewScreenshot`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotLinkageResponse> {
+		public var get: Request<ASC.SubscriptionAppStoreReviewScreenshotLinkageResponse> {
 			Request(path: path, method: "GET", id: "subscriptions_appStoreReviewScreenshot_getToOneRelationship")
 		}
 	}

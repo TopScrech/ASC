@@ -13,7 +13,7 @@ extension APIEndpoint.V1.PassTypeIDs.WithID.Relationships {
 		/// Path: `/v1/passTypeIds/{id}/relationships/certificates`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.PassTypeIDCertificatesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.PassTypeIDCertificatesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "passTypeIds_certificates_getToManyRelationship")
 		}
 

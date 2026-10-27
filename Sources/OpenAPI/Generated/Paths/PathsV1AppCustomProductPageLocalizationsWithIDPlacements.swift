@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCustomProductPageLocalizations.WithID {
 		/// Path: `/v1/appCustomProductPageLocalizations/{id}/placements`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryPlacementsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppAssetLibraryPlacementsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appCustomProductPageLocalizations_placements_getToManyRelated")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Webhooks.WithID {
 		/// Path: `/v1/webhooks/{id}/deliveries`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.WebhookDeliveriesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.WebhookDeliveriesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "webhooks_deliveries_getToManyRelated")
 		}
 

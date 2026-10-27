@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/ciWorkflows`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.CiWorkflowCreateRequest) -> Request<AppStoreConnect_Swift_SDK.CiWorkflowResponse> {
+		public func post(_ body: ASC.CiWorkflowCreateRequest) -> Request<ASC.CiWorkflowResponse> {
 			Request(path: path, method: "POST", body: body, id: "ciWorkflows_createInstance")
 		}
 	}

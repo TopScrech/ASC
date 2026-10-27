@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appClipHeaderImages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppClipHeaderImageCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipHeaderImageResponse> {
+		public func post(_ body: ASC.AppClipHeaderImageCreateRequest) -> Request<ASC.AppClipHeaderImageResponse> {
 			Request(path: path, method: "POST", body: body, id: "appClipHeaderImages_createInstance")
 		}
 	}

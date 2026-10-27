@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildUploads.WithID {
 		/// Path: `/v1/buildUploads/{id}/buildUploadFiles`
 		public let path: String
 
-		public func get(fieldsBuildUploadFiles: [FieldsBuildUploadFiles]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildUploadFilesResponse> {
+		public func get(fieldsBuildUploadFiles: [FieldsBuildUploadFiles]? = nil, limit: Int? = nil) -> Request<ASC.BuildUploadFilesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsBuildUploadFiles, limit), id: "buildUploads_buildUploadFiles_getToManyRelated")
 		}
 

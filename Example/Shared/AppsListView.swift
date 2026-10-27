@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import AppStoreConnect_Swift_SDK
+import ASC
 
 struct AppsListView: View {
     @ObservedObject var viewModel = AppsListViewModel()
@@ -49,7 +49,7 @@ struct AppsListView_Previews: PreviewProvider {
 }
 
 final class AppsListViewModel: ObservableObject {
-    @Published var apps: [AppStoreConnect_Swift_SDK.App] = []
+    @Published var apps: [ASC.App] = []
 
     /// Go to https://appstoreconnect.apple.com/access/api and create your own key. This is also the page to find the private key ID and the issuer ID.
     /// Download the private key and open it in a text editor. Remove the enters and copy the contents over to the private key parameter.
@@ -101,7 +101,7 @@ final class AppsListViewModel: ObservableObject {
     }
 
     @MainActor
-    private func updateApps(to apps: [AppStoreConnect_Swift_SDK.App]) {
+    private func updateApps(to apps: [ASC.App]) {
         self.apps = apps
     }
 }

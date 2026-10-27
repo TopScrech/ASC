@@ -13,7 +13,7 @@ extension APIEndpoint.V1.ReviewSubmissionItems {
 		/// Path: `/v1/reviewSubmissionItems/{id}`
 		public let path: String
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.ReviewSubmissionItemUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.ReviewSubmissionItemResponse> {
+		public func patch(_ body: ASC.ReviewSubmissionItemUpdateRequest) -> Request<ASC.ReviewSubmissionItemResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "reviewSubmissionItems_updateInstance")
 		}
 

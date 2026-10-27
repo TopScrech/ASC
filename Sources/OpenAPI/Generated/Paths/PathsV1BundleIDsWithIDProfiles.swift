@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BundleIDs.WithID {
 		/// Path: `/v1/bundleIds/{id}/profiles`
 		public let path: String
 
-		public func get(fieldsProfiles: [FieldsProfiles]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.ProfilesWithoutIncludesResponse> {
+		public func get(fieldsProfiles: [FieldsProfiles]? = nil, limit: Int? = nil) -> Request<ASC.ProfilesWithoutIncludesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsProfiles, limit), id: "bundleIds_profiles_getToManyRelated")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AlternativeDistributionPackageVersions.WithID {
 		/// Path: `/v1/alternativeDistributionPackageVersions/{id}/variants`
 		public let path: String
 
-		public func get(fieldsAlternativeDistributionPackageVariants: [FieldsAlternativeDistributionPackageVariants]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionPackageVariantsResponse> {
+		public func get(fieldsAlternativeDistributionPackageVariants: [FieldsAlternativeDistributionPackageVariants]? = nil, limit: Int? = nil) -> Request<ASC.AlternativeDistributionPackageVariantsResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAlternativeDistributionPackageVariants, limit), id: "alternativeDistributionPackageVersions_variants_getToManyRelated")
 		}
 

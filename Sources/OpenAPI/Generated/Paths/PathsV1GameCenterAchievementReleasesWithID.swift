@@ -14,7 +14,7 @@ extension APIEndpoint.V1.GameCenterAchievementReleases {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementReleaseResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterAchievementReleaseResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAchievementReleases_getInstance")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/subscriptionPlanAvailabilities`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.SubscriptionPlanAvailabilityCreateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionPlanAvailabilityResponse> {
+		public func post(_ body: ASC.SubscriptionPlanAvailabilityCreateRequest) -> Request<ASC.SubscriptionPlanAvailabilityResponse> {
 			Request(path: path, method: "POST", body: body, id: "subscriptionPlanAvailabilities_createInstance")
 		}
 	}

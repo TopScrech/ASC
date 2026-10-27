@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionGracePeriods {
 		/// Path: `/v1/subscriptionGracePeriods/{id}`
 		public let path: String
 
-		public func get(fieldsSubscriptionGracePeriods: [FieldsSubscriptionGracePeriods]? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGracePeriodResponse> {
+		public func get(fieldsSubscriptionGracePeriods: [FieldsSubscriptionGracePeriods]? = nil) -> Request<ASC.SubscriptionGracePeriodResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsSubscriptionGracePeriods), id: "subscriptionGracePeriods_getInstance")
 		}
 
@@ -30,7 +30,7 @@ extension APIEndpoint.V1.SubscriptionGracePeriods {
 			case renewalType
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.SubscriptionGracePeriodUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionGracePeriodResponse> {
+		public func patch(_ body: ASC.SubscriptionGracePeriodUpdateRequest) -> Request<ASC.SubscriptionGracePeriodResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "subscriptionGracePeriods_updateInstance")
 		}
 	}

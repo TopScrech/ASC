@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterLeaderboardLocalizations.WithID {
 		/// Path: `/v2/gameCenterLeaderboardLocalizations/{id}/image`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardImageV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterLeaderboardImageV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterLeaderboardLocalizationsV2_image_getToOneRelated")
 		}
 

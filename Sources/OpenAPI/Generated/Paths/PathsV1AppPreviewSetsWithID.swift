@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppPreviewSets {
 		/// Path: `/v1/appPreviewSets/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPreviewSetResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppPreviewSetResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appPreviewSets_getInstance")
 		}
 

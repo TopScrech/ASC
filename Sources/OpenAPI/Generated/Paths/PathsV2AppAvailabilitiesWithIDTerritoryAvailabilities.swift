@@ -13,7 +13,7 @@ extension APIEndpoint.V2.AppAvailabilities.WithID {
 		/// Path: `/v2/appAvailabilities/{id}/territoryAvailabilities`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.TerritoryAvailabilitiesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.TerritoryAvailabilitiesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appAvailabilitiesV2_territoryAvailabilities_getToManyRelated")
 		}
 

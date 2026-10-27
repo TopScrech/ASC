@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BackgroundAssets.WithID.Relationships {
 		/// Path: `/v1/backgroundAssets/{id}/relationships/versions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetVersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.BackgroundAssetVersionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "backgroundAssets_versions_getToManyRelationship")
 		}
 

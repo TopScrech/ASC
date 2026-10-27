@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID {
 		/// Path: `/v1/apps/{id}/marketplaceSearchDetail`
 		public let path: String
 
-		public func get(fieldsMarketplaceSearchDetails: [FieldsMarketplaceSearchDetails]? = nil) -> Request<AppStoreConnect_Swift_SDK.MarketplaceSearchDetailResponse> {
+		public func get(fieldsMarketplaceSearchDetails: [FieldsMarketplaceSearchDetails]? = nil) -> Request<ASC.MarketplaceSearchDetailResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsMarketplaceSearchDetails), id: "apps_marketplaceSearchDetail_getToOneRelated")
 		}
 

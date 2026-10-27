@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiProducts.WithID.Relationships {
 		/// Path: `/v1/ciProducts/{id}/relationships/app`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.CiProductAppLinkageResponse> {
+		public var get: Request<ASC.CiProductAppLinkageResponse> {
 			Request(path: path, method: "GET", id: "ciProducts_app_getToOneRelationship")
 		}
 	}

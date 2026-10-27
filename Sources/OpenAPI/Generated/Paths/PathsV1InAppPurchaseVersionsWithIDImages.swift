@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseVersions.WithID {
 		/// Path: `/v1/inAppPurchaseVersions/{id}/images`
 		public let path: String
 
-		public func get(fieldsInAppPurchaseImages: [FieldsInAppPurchaseImages]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseImagesV2Response> {
+		public func get(fieldsInAppPurchaseImages: [FieldsInAppPurchaseImages]? = nil, limit: Int? = nil) -> Request<ASC.InAppPurchaseImagesV2Response> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsInAppPurchaseImages, limit), id: "inAppPurchaseVersions_images_getToManyRelated")
 		}
 

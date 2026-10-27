@@ -13,11 +13,11 @@ extension APIEndpoint.V1.Builds.WithID.Relationships {
 		/// Path: `/v1/builds/{id}/relationships/appEncryptionDeclaration`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BuildAppEncryptionDeclarationLinkageResponse> {
+		public var get: Request<ASC.BuildAppEncryptionDeclarationLinkageResponse> {
 			Request(path: path, method: "GET", id: "builds_appEncryptionDeclaration_getToOneRelationship")
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BuildAppEncryptionDeclarationLinkageRequest) -> Request<Void> {
+		public func patch(_ body: ASC.BuildAppEncryptionDeclarationLinkageRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "builds_appEncryptionDeclaration_updateToOneRelationship")
 		}
 	}

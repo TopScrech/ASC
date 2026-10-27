@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/betaTesters`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaTestersResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BetaTestersResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "betaTesters_getCollection")
 		}
 
@@ -227,7 +227,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BetaTesterCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaTesterResponse> {
+		public func post(_ body: ASC.BetaTesterCreateRequest) -> Request<ASC.BetaTesterResponse> {
 			Request(path: path, method: "POST", body: body, id: "betaTesters_createInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Users.WithID.Relationships {
 		/// Path: `/v1/users/{id}/relationships/visibleApps`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.UserVisibleAppsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.UserVisibleAppsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "users_visibleApps_getToManyRelationship")
 		}
 
@@ -23,15 +23,15 @@ extension APIEndpoint.V1.Users.WithID.Relationships {
 			return encoder.items
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: ASC.UserVisibleAppsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "POST", body: body, id: "users_visibleApps_createToManyRelationship")
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
+		public func patch(_ body: ASC.UserVisibleAppsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "users_visibleApps_replaceToManyRelationship")
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.UserVisibleAppsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.UserVisibleAppsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "users_visibleApps_deleteToManyRelationship")
 		}
 	}

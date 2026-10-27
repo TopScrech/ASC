@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/accessibilityDeclarations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AccessibilityDeclarationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AccessibilityDeclarationResponse> {
+		public func post(_ body: ASC.AccessibilityDeclarationCreateRequest) -> Request<ASC.AccessibilityDeclarationResponse> {
 			Request(path: path, method: "POST", body: body, id: "accessibilityDeclarations_createInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterDetails.WithID {
 		/// Path: `/v1/gameCenterDetails/{id}/blockedPlayers`
 		public let path: String
 
-		public func get(fieldsGameCenterDetailPlayers: [FieldsGameCenterDetailPlayers]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterDetailPlayersResponse> {
+		public func get(fieldsGameCenterDetailPlayers: [FieldsGameCenterDetailPlayers]? = nil, limit: Int? = nil) -> Request<ASC.GameCenterDetailPlayersResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsGameCenterDetailPlayers, limit), id: "gameCenterDetails_blockedPlayers_getToManyRelated")
 		}
 

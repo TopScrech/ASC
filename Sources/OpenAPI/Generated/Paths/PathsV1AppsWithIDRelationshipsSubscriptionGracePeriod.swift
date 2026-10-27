@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/subscriptionGracePeriod`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppSubscriptionGracePeriodLinkageResponse> {
+		public var get: Request<ASC.AppSubscriptionGracePeriodLinkageResponse> {
 			Request(path: path, method: "GET", id: "apps_subscriptionGracePeriod_getToOneRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AlternativeDistributionPackages.WithID.Relationships {
 		/// Path: `/v1/alternativeDistributionPackages/{id}/relationships/versions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionPackageVersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AlternativeDistributionPackageVersionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "alternativeDistributionPackages_versions_getToManyRelationship")
 		}
 

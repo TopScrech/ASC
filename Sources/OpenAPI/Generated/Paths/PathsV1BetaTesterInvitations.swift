@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/betaTesterInvitations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BetaTesterInvitationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaTesterInvitationResponse> {
+		public func post(_ body: ASC.BetaTesterInvitationCreateRequest) -> Request<ASC.BetaTesterInvitationResponse> {
 			Request(path: path, method: "POST", body: body, id: "betaTesterInvitations_createInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appAssetLibraryImages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppAssetLibraryImageCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryImageResponse> {
+		public func post(_ body: ASC.AppAssetLibraryImageCreateRequest) -> Request<ASC.AppAssetLibraryImageResponse> {
 			Request(path: path, method: "POST", body: body, id: "appAssetLibraryImages_createInstance")
 		}
 	}

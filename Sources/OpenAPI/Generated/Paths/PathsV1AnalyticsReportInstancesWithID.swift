@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AnalyticsReportInstances {
 		/// Path: `/v1/analyticsReportInstances/{id}`
 		public let path: String
 
-		public func get(fieldsAnalyticsReportInstances: [FieldsAnalyticsReportInstances]? = nil) -> Request<AppStoreConnect_Swift_SDK.AnalyticsReportInstanceResponse> {
+		public func get(fieldsAnalyticsReportInstances: [FieldsAnalyticsReportInstances]? = nil) -> Request<ASC.AnalyticsReportInstanceResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAnalyticsReportInstances), id: "analyticsReportInstances_getInstance")
 		}
 

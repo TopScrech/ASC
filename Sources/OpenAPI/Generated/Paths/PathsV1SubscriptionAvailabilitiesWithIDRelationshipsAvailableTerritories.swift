@@ -14,7 +14,7 @@ extension APIEndpoint.V1.SubscriptionAvailabilities.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.SubscriptionAvailabilityAvailableTerritoriesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "subscriptionAvailabilities_availableTerritories_getToManyRelationship")
 		}
 

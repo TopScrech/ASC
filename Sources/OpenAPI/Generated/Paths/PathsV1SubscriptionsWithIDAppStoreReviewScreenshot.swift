@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Subscriptions.WithID {
 		/// Path: `/v1/subscriptions/{id}/appStoreReviewScreenshot`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.SubscriptionAppStoreReviewScreenshotResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "subscriptions_appStoreReviewScreenshot_getToOneRelated")
 		}
 

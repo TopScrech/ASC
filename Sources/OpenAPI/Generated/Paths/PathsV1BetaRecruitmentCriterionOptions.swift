@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/betaRecruitmentCriterionOptions`
 		public let path: String
 
-		public func get(fieldsBetaRecruitmentCriterionOptions: [FieldsBetaRecruitmentCriterionOptions]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.BetaRecruitmentCriterionOptionsResponse> {
+		public func get(fieldsBetaRecruitmentCriterionOptions: [FieldsBetaRecruitmentCriterionOptions]? = nil, limit: Int? = nil) -> Request<ASC.BetaRecruitmentCriterionOptionsResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsBetaRecruitmentCriterionOptions, limit), id: "betaRecruitmentCriterionOptions_getCollection")
 		}
 

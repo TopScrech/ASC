@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/gameCenterAchievementImages`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterAchievementImageV2CreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementImageV2Response> {
+		public func post(_ body: ASC.GameCenterAchievementImageV2CreateRequest) -> Request<ASC.GameCenterAchievementImageV2Response> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterAchievementImagesV2_createInstance")
 		}
 	}

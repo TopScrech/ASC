@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterMatchmakingRuleSets {
 		/// Path: `/v1/gameCenterMatchmakingRuleSets/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterMatchmakingRuleSetResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterMatchmakingRuleSetResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterMatchmakingRuleSets_getInstance")
 		}
 
@@ -89,7 +89,7 @@ extension APIEndpoint.V1.GameCenterMatchmakingRuleSets {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterMatchmakingRuleSetUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterMatchmakingRuleSetResponse> {
+		public func patch(_ body: ASC.GameCenterMatchmakingRuleSetUpdateRequest) -> Request<ASC.GameCenterMatchmakingRuleSetResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterMatchmakingRuleSets_updateInstance")
 		}
 

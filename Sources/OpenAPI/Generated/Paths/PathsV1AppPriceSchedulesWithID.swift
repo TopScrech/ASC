@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppPriceSchedules {
 		/// Path: `/v1/appPriceSchedules/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPriceScheduleResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppPriceScheduleResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appPriceSchedules_getInstance")
 		}
 

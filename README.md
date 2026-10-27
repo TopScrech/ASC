@@ -1,4 +1,4 @@
-# App Store Connect Swift SDK
+# ASC
 
 The Swift SDK to work with the App Store Connect API from Apple.
 
@@ -32,7 +32,7 @@ _Not all endpoints are available yet, we're working hard to implement them all (
 #### 1. Import the framework:
 
 ```swift
-import AppStoreConnect_Swift_SDK
+import ASC
 ```
 
 #### 2. Create your API Configuration

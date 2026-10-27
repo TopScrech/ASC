@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/gameCenterGroups`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterGroupsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterGroupsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterGroups_getCollection")
 		}
 
@@ -223,7 +223,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterGroupCreateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterGroupResponse> {
+		public func post(_ body: ASC.GameCenterGroupCreateRequest) -> Request<ASC.GameCenterGroupResponse> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterGroups_createInstance")
 		}
 	}

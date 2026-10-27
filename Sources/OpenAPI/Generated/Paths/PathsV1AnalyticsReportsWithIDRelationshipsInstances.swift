@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AnalyticsReports.WithID.Relationships {
 		/// Path: `/v1/analyticsReports/{id}/relationships/instances`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AnalyticsReportInstancesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AnalyticsReportInstancesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "analyticsReports_instances_getToManyRelationship")
 		}
 

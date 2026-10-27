@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterActivityVersions {
 		/// Path: `/v1/gameCenterActivityVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterActivityVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterActivityVersionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterActivityVersions_getInstance")
 		}
 
@@ -107,7 +107,7 @@ extension APIEndpoint.V1.GameCenterActivityVersions {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterActivityVersionUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterActivityVersionResponse> {
+		public func patch(_ body: ASC.GameCenterActivityVersionUpdateRequest) -> Request<ASC.GameCenterActivityVersionResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterActivityVersions_updateInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterAchievementLocalizations.WithID {
 		/// Path: `/v2/gameCenterAchievementLocalizations/{id}/image`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementImageV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterAchievementImageV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAchievementLocalizationsV2_image_getToOneRelated")
 		}
 

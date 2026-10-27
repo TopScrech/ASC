@@ -13,7 +13,7 @@ extension APIEndpoint.V2.AppStoreVersionExperiments.WithID {
 		/// Path: `/v2/appStoreVersionExperiments/{id}/appStoreVersionExperimentTreatments`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentTreatmentsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreVersionExperimentTreatmentsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersionExperimentsV2_appStoreVersionExperimentTreatments_getToManyRelated")
 		}
 

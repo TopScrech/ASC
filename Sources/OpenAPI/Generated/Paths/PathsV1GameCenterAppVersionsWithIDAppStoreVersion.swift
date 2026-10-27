@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterAppVersions.WithID {
 		/// Path: `/v1/gameCenterAppVersions/{id}/appStoreVersion`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreVersionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterAppVersions_appStoreVersion_getToOneRelated")
 		}
 

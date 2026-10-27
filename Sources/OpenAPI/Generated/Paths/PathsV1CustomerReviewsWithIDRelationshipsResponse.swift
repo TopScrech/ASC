@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CustomerReviews.WithID.Relationships {
 		/// Path: `/v1/customerReviews/{id}/relationships/response`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.CustomerReviewResponseLinkageResponse> {
+		public var get: Request<ASC.CustomerReviewResponseLinkageResponse> {
 			Request(path: path, method: "GET", id: "customerReviews_response_getToOneRelationship")
 		}
 	}

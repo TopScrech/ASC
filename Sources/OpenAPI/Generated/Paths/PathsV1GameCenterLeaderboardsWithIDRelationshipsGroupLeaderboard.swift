@@ -14,12 +14,12 @@ extension APIEndpoint.V1.GameCenterLeaderboards.WithID.Relationships {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public var get: Request<AppStoreConnect_Swift_SDK.GameCenterLeaderboardGroupLeaderboardLinkageResponse> {
+		public var get: Request<ASC.GameCenterLeaderboardGroupLeaderboardLinkageResponse> {
 			Request(path: path, method: "GET", id: "gameCenterLeaderboards_groupLeaderboard_getToOneRelationship")
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterLeaderboardGroupLeaderboardLinkageRequest) -> Request<Void> {
+		public func patch(_ body: ASC.GameCenterLeaderboardGroupLeaderboardLinkageRequest) -> Request<Void> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterLeaderboards_groupLeaderboard_updateToOneRelationship")
 		}
 	}

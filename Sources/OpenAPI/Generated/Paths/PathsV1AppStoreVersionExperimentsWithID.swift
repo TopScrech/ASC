@@ -14,7 +14,7 @@ extension APIEndpoint.V1.AppStoreVersionExperiments {
 		public let path: String
 
 		@available(*, deprecated, message: "Deprecated")
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreVersionExperimentResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersionExperiments_getInstance")
 		}
 
@@ -98,7 +98,7 @@ extension APIEndpoint.V1.AppStoreVersionExperiments {
 		}
 
 		@available(*, deprecated, message: "Deprecated")
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppStoreVersionExperimentUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentResponse> {
+		public func patch(_ body: ASC.AppStoreVersionExperimentUpdateRequest) -> Request<ASC.AppStoreVersionExperimentResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appStoreVersionExperiments_updateInstance")
 		}
 

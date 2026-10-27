@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterActivityVersions.WithID {
 		/// Path: `/v1/gameCenterActivityVersions/{id}/defaultImage`
 		public let path: String
 
-		public func get(fieldsGameCenterActivityImages: [FieldsGameCenterActivityImages]? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterActivityImageResponse> {
+		public func get(fieldsGameCenterActivityImages: [FieldsGameCenterActivityImages]? = nil) -> Request<ASC.GameCenterActivityImageResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsGameCenterActivityImages), id: "gameCenterActivityVersions_defaultImage_getToOneRelated")
 		}
 

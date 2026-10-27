@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appCustomProductPageLocalizations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationResponse> {
+		public func post(_ body: ASC.AppCustomProductPageLocalizationCreateRequest) -> Request<ASC.AppCustomProductPageLocalizationResponse> {
 			Request(path: path, method: "POST", body: body, id: "appCustomProductPageLocalizations_createInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/betaRecruitmentCriteria`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.BetaRecruitmentCriterionCreateRequest) -> Request<AppStoreConnect_Swift_SDK.BetaRecruitmentCriterionResponse> {
+		public func post(_ body: ASC.BetaRecruitmentCriterionCreateRequest) -> Request<ASC.BetaRecruitmentCriterionResponse> {
 			Request(path: path, method: "POST", body: body, id: "betaRecruitmentCriteria_createInstance")
 		}
 	}

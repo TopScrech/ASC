@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreReviewDetails.WithID.Relationships {
 		/// Path: `/v1/appStoreReviewDetails/{id}/relationships/appStoreReviewAttachments`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppStoreReviewDetailAppStoreReviewAttachmentsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appStoreReviewDetails_appStoreReviewAttachments_getToManyRelationship")
 		}
 

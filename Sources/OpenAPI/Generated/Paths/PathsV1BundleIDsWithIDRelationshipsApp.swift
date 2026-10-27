@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BundleIDs.WithID.Relationships {
 		/// Path: `/v1/bundleIds/{id}/relationships/app`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BundleIDAppLinkageResponse> {
+		public var get: Request<ASC.BundleIDAppLinkageResponse> {
 			Request(path: path, method: "GET", id: "bundleIds_app_getToOneRelationship")
 		}
 	}

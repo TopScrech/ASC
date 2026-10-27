@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/promotedPurchases`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.PromotedPurchaseCreateRequest) -> Request<AppStoreConnect_Swift_SDK.PromotedPurchaseResponse> {
+		public func post(_ body: ASC.PromotedPurchaseCreateRequest) -> Request<ASC.PromotedPurchaseResponse> {
 			Request(path: path, method: "POST", body: body, id: "promotedPurchases_createInstance")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.SubscriptionVersions.WithID.Relationships {
 		/// Path: `/v1/subscriptionVersions/{id}/relationships/localizations`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.SubscriptionVersionLocalizationsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.SubscriptionVersionLocalizationsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "subscriptionVersions_localizations_getToManyRelationship")
 		}
 

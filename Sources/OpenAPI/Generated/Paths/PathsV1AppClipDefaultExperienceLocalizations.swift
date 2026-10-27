@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appClipDefaultExperienceLocalizations`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppClipDefaultExperienceLocalizationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceLocalizationResponse> {
+		public func post(_ body: ASC.AppClipDefaultExperienceLocalizationCreateRequest) -> Request<ASC.AppClipDefaultExperienceLocalizationResponse> {
 			Request(path: path, method: "POST", body: body, id: "appClipDefaultExperienceLocalizations_createInstance")
 		}
 	}

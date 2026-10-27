@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppPriceSchedules.WithID {
 		/// Path: `/v1/appPriceSchedules/{id}/manualPrices`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppPricesV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppPricesV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appPriceSchedules_manualPrices_getToManyRelated")
 		}
 

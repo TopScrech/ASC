@@ -13,7 +13,7 @@ extension APIEndpoint.V1.ScmGitReferences {
 		/// Path: `/v1/scmGitReferences/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.ScmGitReferenceResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.ScmGitReferenceResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "scmGitReferences_getInstance")
 		}
 

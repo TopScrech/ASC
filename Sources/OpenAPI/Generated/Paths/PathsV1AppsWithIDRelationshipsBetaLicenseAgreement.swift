@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/betaLicenseAgreement`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppBetaLicenseAgreementLinkageResponse> {
+		public var get: Request<ASC.AppBetaLicenseAgreementLinkageResponse> {
 			Request(path: path, method: "GET", id: "apps_betaLicenseAgreement_getToOneRelationship")
 		}
 	}

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BuildUploads {
 		/// Path: `/v1/buildUploads/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BuildUploadResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BuildUploadResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "buildUploads_getInstance")
 		}
 

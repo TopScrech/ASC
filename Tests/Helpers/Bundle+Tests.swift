@@ -1,6 +1,6 @@
 //
 //  Bundle+Tests.swift
-//  AppStoreConnect-Swift-SDK
+//  ASC
 //
 //  Created by Oliver Jones on 17/4/20.
 //

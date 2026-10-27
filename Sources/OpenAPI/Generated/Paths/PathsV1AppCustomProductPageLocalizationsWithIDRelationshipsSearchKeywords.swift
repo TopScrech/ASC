@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCustomProductPageLocalizations.WithID.Relationships 
 		/// Path: `/v1/appCustomProductPageLocalizations/{id}/relationships/searchKeywords`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppCustomProductPageLocalizationSearchKeywordsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appCustomProductPageLocalizations_searchKeywords_getToManyRelationship")
 		}
 
@@ -23,11 +23,11 @@ extension APIEndpoint.V1.AppCustomProductPageLocalizations.WithID.Relationships 
 			return encoder.items
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest) -> Request<Void> {
+		public func post(_ body: ASC.AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "POST", body: body, id: "appCustomProductPageLocalizations_searchKeywords_createToManyRelationship")
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.AppCustomProductPageLocalizationSearchKeywordsLinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "appCustomProductPageLocalizations_searchKeywords_deleteToManyRelationship")
 		}
 	}

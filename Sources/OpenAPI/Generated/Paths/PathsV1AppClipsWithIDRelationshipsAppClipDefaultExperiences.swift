@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClips.WithID.Relationships {
 		/// Path: `/v1/appClips/{id}/relationships/appClipDefaultExperiences`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipAppClipDefaultExperiencesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppClipAppClipDefaultExperiencesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appClips_appClipDefaultExperiences_getToManyRelationship")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Certificates {
 		/// Path: `/v1/certificates/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.CertificateResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.CertificateResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "certificates_getInstance")
 		}
 
@@ -59,7 +59,7 @@ extension APIEndpoint.V1.Certificates {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.CertificateUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.CertificateResponse> {
+		public func patch(_ body: ASC.CertificateUpdateRequest) -> Request<ASC.CertificateResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "certificates_updateInstance")
 		}
 

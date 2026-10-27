@@ -13,11 +13,11 @@ extension APIEndpoint.V1.GameCenterActivities.WithID.Relationships {
 		/// Path: `/v1/gameCenterActivities/{id}/relationships/leaderboardsV2`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.GameCenterActivityLeaderboardsV2LinkagesRequest) -> Request<Void> {
+		public func post(_ body: ASC.GameCenterActivityLeaderboardsV2LinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "POST", body: body, id: "gameCenterActivities_leaderboardsV2_createToManyRelationship")
 		}
 
-		public func delete(_ body: AppStoreConnect_Swift_SDK.GameCenterActivityLeaderboardsV2LinkagesRequest) -> Request<Void> {
+		public func delete(_ body: ASC.GameCenterActivityLeaderboardsV2LinkagesRequest) -> Request<Void> {
 			Request(path: path, method: "DELETE", body: body, id: "gameCenterActivities_leaderboardsV2_deleteToManyRelationship")
 		}
 	}

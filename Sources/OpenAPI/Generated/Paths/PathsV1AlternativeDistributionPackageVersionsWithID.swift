@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AlternativeDistributionPackageVersions {
 		/// Path: `/v1/alternativeDistributionPackageVersions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AlternativeDistributionPackageVersionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AlternativeDistributionPackageVersionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "alternativeDistributionPackageVersions_getInstance")
 		}
 

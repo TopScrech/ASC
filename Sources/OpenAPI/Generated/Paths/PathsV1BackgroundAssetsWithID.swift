@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BackgroundAssets {
 		/// Path: `/v1/backgroundAssets/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BackgroundAssetResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "backgroundAssets_getInstance")
 		}
 
@@ -135,7 +135,7 @@ extension APIEndpoint.V1.BackgroundAssets {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.BackgroundAssetUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetResponse> {
+		public func patch(_ body: ASC.BackgroundAssetUpdateRequest) -> Request<ASC.BackgroundAssetResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "backgroundAssets_updateInstance")
 		}
 	}

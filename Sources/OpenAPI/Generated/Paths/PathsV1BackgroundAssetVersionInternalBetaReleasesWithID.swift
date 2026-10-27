@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BackgroundAssetVersionInternalBetaReleases {
 		/// Path: `/v1/backgroundAssetVersionInternalBetaReleases/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.BackgroundAssetVersionInternalBetaReleaseResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.BackgroundAssetVersionInternalBetaReleaseResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "backgroundAssetVersionInternalBetaReleases_getInstance")
 		}
 

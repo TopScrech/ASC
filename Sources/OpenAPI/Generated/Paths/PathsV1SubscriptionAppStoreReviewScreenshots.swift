@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/subscriptionAppStoreReviewScreenshots`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotCreateRequest) -> Request<AppStoreConnect_Swift_SDK.SubscriptionAppStoreReviewScreenshotResponse> {
+		public func post(_ body: ASC.SubscriptionAppStoreReviewScreenshotCreateRequest) -> Request<ASC.SubscriptionAppStoreReviewScreenshotResponse> {
 			Request(path: path, method: "POST", body: body, id: "subscriptionAppStoreReviewScreenshots_createInstance")
 		}
 	}

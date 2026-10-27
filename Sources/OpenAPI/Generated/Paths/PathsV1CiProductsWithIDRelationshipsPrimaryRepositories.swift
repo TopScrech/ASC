@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiProducts.WithID.Relationships {
 		/// Path: `/v1/ciProducts/{id}/relationships/primaryRepositories`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.CiProductPrimaryRepositoriesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.CiProductPrimaryRepositoriesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "ciProducts_primaryRepositories_getToManyRelationship")
 		}
 

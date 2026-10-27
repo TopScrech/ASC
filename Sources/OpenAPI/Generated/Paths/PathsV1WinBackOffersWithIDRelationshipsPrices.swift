@@ -13,7 +13,7 @@ extension APIEndpoint.V1.WinBackOffers.WithID.Relationships {
 		/// Path: `/v1/winBackOffers/{id}/relationships/prices`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.WinBackOfferPricesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.WinBackOfferPricesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "winBackOffers_prices_getToManyRelationship")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppCustomProductPageLocalizations.WithID.Relationships 
 		/// Path: `/v1/appCustomProductPageLocalizations/{id}/relationships/appScreenshotSets`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppCustomProductPageLocalizationAppScreenshotSetsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appCustomProductPageLocalizations_appScreenshotSets_getToManyRelationship")
 		}
 

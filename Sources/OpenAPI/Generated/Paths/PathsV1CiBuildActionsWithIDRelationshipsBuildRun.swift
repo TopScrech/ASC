@@ -13,7 +13,7 @@ extension APIEndpoint.V1.CiBuildActions.WithID.Relationships {
 		/// Path: `/v1/ciBuildActions/{id}/relationships/buildRun`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.CiBuildActionBuildRunLinkageResponse> {
+		public var get: Request<ASC.CiBuildActionBuildRunLinkageResponse> {
 			Request(path: path, method: "GET", id: "ciBuildActions_buildRun_getToOneRelationship")
 		}
 	}

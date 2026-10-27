@@ -13,7 +13,7 @@ extension APIEndpoint.V2.AppAvailabilities {
 		/// Path: `/v2/appAvailabilities/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAvailabilityV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppAvailabilityV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appAvailabilitiesV2_getInstance")
 		}
 

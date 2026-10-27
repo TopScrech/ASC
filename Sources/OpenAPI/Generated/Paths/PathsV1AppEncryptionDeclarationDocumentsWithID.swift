@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppEncryptionDeclarationDocuments {
 		/// Path: `/v1/appEncryptionDeclarationDocuments/{id}`
 		public let path: String
 
-		public func get(fieldsAppEncryptionDeclarationDocuments: [FieldsAppEncryptionDeclarationDocuments]? = nil) -> Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationDocumentResponse> {
+		public func get(fieldsAppEncryptionDeclarationDocuments: [FieldsAppEncryptionDeclarationDocuments]? = nil) -> Request<ASC.AppEncryptionDeclarationDocumentResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAppEncryptionDeclarationDocuments), id: "appEncryptionDeclarationDocuments_getInstance")
 		}
 
@@ -33,7 +33,7 @@ extension APIEndpoint.V1.AppEncryptionDeclarationDocuments {
 			case assetDeliveryState
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppEncryptionDeclarationDocumentUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppEncryptionDeclarationDocumentResponse> {
+		public func patch(_ body: ASC.AppEncryptionDeclarationDocumentUpdateRequest) -> Request<ASC.AppEncryptionDeclarationDocumentResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appEncryptionDeclarationDocuments_updateInstance")
 		}
 	}

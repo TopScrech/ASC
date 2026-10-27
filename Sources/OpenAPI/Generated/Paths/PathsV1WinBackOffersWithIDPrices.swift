@@ -13,7 +13,7 @@ extension APIEndpoint.V1.WinBackOffers.WithID {
 		/// Path: `/v1/winBackOffers/{id}/prices`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.WinBackOfferPricesResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.WinBackOfferPricesResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "winBackOffers_prices_getToManyRelated")
 		}
 

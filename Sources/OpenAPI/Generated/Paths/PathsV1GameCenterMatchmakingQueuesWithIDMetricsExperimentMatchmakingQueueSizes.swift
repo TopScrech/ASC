@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterMatchmakingQueues.WithID.Metrics {
 		/// Path: `/v1/gameCenterMatchmakingQueues/{id}/metrics/experimentMatchmakingQueueSizes`
 		public let path: String
 
-		public func get(parameters: GetParameters) -> Request<AppStoreConnect_Swift_SDK.GameCenterMatchmakingQueueSizesV1MetricResponse> {
+		public func get(parameters: GetParameters) -> Request<ASC.GameCenterMatchmakingQueueSizesV1MetricResponse> {
 			Request(path: path, method: "GET", query: parameters.asQuery, id: "gameCenterMatchmakingQueues_experimentMatchmakingQueueSizes_getMetrics")
 		}
 

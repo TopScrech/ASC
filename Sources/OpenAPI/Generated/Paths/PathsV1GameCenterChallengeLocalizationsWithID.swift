@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterChallengeLocalizations {
 		/// Path: `/v1/gameCenterChallengeLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterChallengeLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.GameCenterChallengeLocalizationResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "gameCenterChallengeLocalizations_getInstance")
 		}
 
@@ -70,7 +70,7 @@ extension APIEndpoint.V1.GameCenterChallengeLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.GameCenterChallengeLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.GameCenterChallengeLocalizationResponse> {
+		public func patch(_ body: ASC.GameCenterChallengeLocalizationUpdateRequest) -> Request<ASC.GameCenterChallengeLocalizationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "gameCenterChallengeLocalizations_updateInstance")
 		}
 

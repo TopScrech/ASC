@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/inAppPurchaseOfferCodes`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeCreateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseOfferCodeResponse> {
+		public func post(_ body: ASC.InAppPurchaseOfferCodeCreateRequest) -> Request<ASC.InAppPurchaseOfferCodeResponse> {
 			Request(path: path, method: "POST", body: body, id: "inAppPurchaseOfferCodes_createInstance")
 		}
 	}

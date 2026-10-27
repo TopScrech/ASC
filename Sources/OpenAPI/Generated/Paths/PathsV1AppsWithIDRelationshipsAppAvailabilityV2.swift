@@ -13,7 +13,7 @@ extension APIEndpoint.V1.Apps.WithID.Relationships {
 		/// Path: `/v1/apps/{id}/relationships/appAvailabilityV2`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppAppAvailabilityV2LinkageResponse> {
+		public var get: Request<ASC.AppAppAvailabilityV2LinkageResponse> {
 			Request(path: path, method: "GET", id: "apps_appAvailabilityV2_getToOneRelationship")
 		}
 	}

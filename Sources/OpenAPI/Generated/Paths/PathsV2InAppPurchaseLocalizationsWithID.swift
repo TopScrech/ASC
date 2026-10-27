@@ -13,7 +13,7 @@ extension APIEndpoint.V2.InAppPurchaseLocalizations {
 		/// Path: `/v2/inAppPurchaseLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationV2Response> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseLocalizationV2Response> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseLocalizationsV2_getInstance")
 		}
 
@@ -57,7 +57,7 @@ extension APIEndpoint.V2.InAppPurchaseLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationV2UpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseLocalizationV2Response> {
+		public func patch(_ body: ASC.InAppPurchaseLocalizationV2UpdateRequest) -> Request<ASC.InAppPurchaseLocalizationV2Response> {
 			Request(path: path, method: "PATCH", body: body, id: "inAppPurchaseLocalizationsV2_updateInstance")
 		}
 

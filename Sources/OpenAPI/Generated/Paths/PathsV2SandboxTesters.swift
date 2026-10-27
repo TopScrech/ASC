@@ -13,7 +13,7 @@ extension APIEndpoint.V2 {
 		/// Path: `/v2/sandboxTesters`
 		public let path: String
 
-		public func get(fieldsSandboxTesters: [FieldsSandboxTesters]? = nil, limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.SandboxTestersV2Response> {
+		public func get(fieldsSandboxTesters: [FieldsSandboxTesters]? = nil, limit: Int? = nil) -> Request<ASC.SandboxTestersV2Response> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsSandboxTesters, limit), id: "sandboxTestersV2_getCollection")
 		}
 

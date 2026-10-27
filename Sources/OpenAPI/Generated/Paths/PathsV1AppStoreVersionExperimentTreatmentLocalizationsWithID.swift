@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreVersionExperimentTreatmentLocalizations {
 		/// Path: `/v1/appStoreVersionExperimentTreatmentLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreVersionExperimentTreatmentLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreVersionExperimentTreatmentLocalizationResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreVersionExperimentTreatmentLocalizations_getInstance")
 		}
 

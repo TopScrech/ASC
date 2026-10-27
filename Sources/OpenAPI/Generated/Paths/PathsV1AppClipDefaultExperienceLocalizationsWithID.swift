@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppClipDefaultExperienceLocalizations {
 		/// Path: `/v1/appClipDefaultExperienceLocalizations/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceLocalizationResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppClipDefaultExperienceLocalizationResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appClipDefaultExperienceLocalizations_getInstance")
 		}
 
@@ -70,7 +70,7 @@ extension APIEndpoint.V1.AppClipDefaultExperienceLocalizations {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppClipDefaultExperienceLocalizationUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceLocalizationResponse> {
+		public func patch(_ body: ASC.AppClipDefaultExperienceLocalizationUpdateRequest) -> Request<ASC.AppClipDefaultExperienceLocalizationResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appClipDefaultExperienceLocalizations_updateInstance")
 		}
 

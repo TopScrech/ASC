@@ -13,7 +13,7 @@ extension APIEndpoint.V1.InAppPurchaseImages {
 		/// Path: `/v1/inAppPurchaseImages/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseImageResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.InAppPurchaseImageResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "inAppPurchaseImages_getInstance")
 		}
 
@@ -72,7 +72,7 @@ extension APIEndpoint.V1.InAppPurchaseImages {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.InAppPurchaseImageUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.InAppPurchaseImageResponse> {
+		public func patch(_ body: ASC.InAppPurchaseImageUpdateRequest) -> Request<ASC.InAppPurchaseImageResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "inAppPurchaseImages_updateInstance")
 		}
 

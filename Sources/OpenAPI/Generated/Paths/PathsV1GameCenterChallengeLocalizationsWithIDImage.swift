@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterChallengeLocalizations.WithID {
 		/// Path: `/v1/gameCenterChallengeLocalizations/{id}/image`
 		public let path: String
 
-		public func get(fieldsGameCenterChallengeImages: [FieldsGameCenterChallengeImages]? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterChallengeImageResponse> {
+		public func get(fieldsGameCenterChallengeImages: [FieldsGameCenterChallengeImages]? = nil) -> Request<ASC.GameCenterChallengeImageResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsGameCenterChallengeImages), id: "gameCenterChallengeLocalizations_image_getToOneRelated")
 		}
 

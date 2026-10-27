@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appPriceSchedules`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppPriceScheduleCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppPriceScheduleResponse> {
+		public func post(_ body: ASC.AppPriceScheduleCreateRequest) -> Request<ASC.AppPriceScheduleResponse> {
 			Request(path: path, method: "POST", body: body, id: "appPriceSchedules_createInstance")
 		}
 	}

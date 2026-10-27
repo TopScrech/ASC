@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppInfos.WithID {
 		/// Path: `/v1/appInfos/{id}/territoryAgeRatings`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.TerritoryAgeRatingsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.TerritoryAgeRatingsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appInfos_territoryAgeRatings_getToManyRelated")
 		}
 

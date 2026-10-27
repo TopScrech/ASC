@@ -13,7 +13,7 @@ extension APIEndpoint.V1.ReviewSubmissions {
 		/// Path: `/v1/reviewSubmissions/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.ReviewSubmissionResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.ReviewSubmissionResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "reviewSubmissions_getInstance")
 		}
 
@@ -183,7 +183,7 @@ extension APIEndpoint.V1.ReviewSubmissions {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.ReviewSubmissionUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.ReviewSubmissionResponse> {
+		public func patch(_ body: ASC.ReviewSubmissionUpdateRequest) -> Request<ASC.ReviewSubmissionResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "reviewSubmissions_updateInstance")
 		}
 	}

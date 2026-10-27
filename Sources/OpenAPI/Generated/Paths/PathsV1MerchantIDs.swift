@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/merchantIds`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.MerchantIDsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.MerchantIDsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "merchantIds_getCollection")
 		}
 
@@ -81,7 +81,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.MerchantIDCreateRequest) -> Request<AppStoreConnect_Swift_SDK.MerchantIDResponse> {
+		public func post(_ body: ASC.MerchantIDCreateRequest) -> Request<ASC.MerchantIDResponse> {
 			Request(path: path, method: "POST", body: body, id: "merchantIds_createInstance")
 		}
 	}

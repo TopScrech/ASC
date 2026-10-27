@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppAssetLibraries.WithID.Relationships {
 		/// Path: `/v1/appAssetLibraries/{id}/relationships/images`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppAssetLibraryImagesLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppAssetLibraryImagesLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appAssetLibraries_images_getToManyRelationship")
 		}
 

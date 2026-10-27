@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/passTypeIds`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.PassTypeIDsResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.PassTypeIDsResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "passTypeIds_getCollection")
 		}
 
@@ -86,7 +86,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.PassTypeIDCreateRequest) -> Request<AppStoreConnect_Swift_SDK.PassTypeIDResponse> {
+		public func post(_ body: ASC.PassTypeIDCreateRequest) -> Request<ASC.PassTypeIDResponse> {
 			Request(path: path, method: "POST", body: body, id: "passTypeIds_createInstance")
 		}
 	}

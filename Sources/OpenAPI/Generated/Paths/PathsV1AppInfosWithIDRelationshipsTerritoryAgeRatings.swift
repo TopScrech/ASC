@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppInfos.WithID.Relationships {
 		/// Path: `/v1/appInfos/{id}/relationships/territoryAgeRatings`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.AppInfoTerritoryAgeRatingsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.AppInfoTerritoryAgeRatingsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "appInfos_territoryAgeRatings_getToManyRelationship")
 		}
 

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.BetaFeedbackCrashSubmissions.WithID.Relationships {
 		/// Path: `/v1/betaFeedbackCrashSubmissions/{id}/relationships/crashLog`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.BetaFeedbackCrashSubmissionCrashLogLinkageResponse> {
+		public var get: Request<ASC.BetaFeedbackCrashSubmissionCrashLogLinkageResponse> {
 			Request(path: path, method: "GET", id: "betaFeedbackCrashSubmissions_crashLog_getToOneRelationship")
 		}
 	}

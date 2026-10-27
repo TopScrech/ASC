@@ -13,7 +13,7 @@ extension APIEndpoint.V1.GameCenterDetails.WithID.Relationships {
 		/// Path: `/v1/gameCenterDetails/{id}/relationships/gameCenterGroup`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.GameCenterDetailGameCenterGroupLinkageResponse> {
+		public var get: Request<ASC.GameCenterDetailGameCenterGroupLinkageResponse> {
 			Request(path: path, method: "GET", id: "gameCenterDetails_gameCenterGroup_getToOneRelationship")
 		}
 	}

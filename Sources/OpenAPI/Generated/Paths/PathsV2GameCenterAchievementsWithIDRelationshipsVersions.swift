@@ -13,7 +13,7 @@ extension APIEndpoint.V2.GameCenterAchievements.WithID.Relationships {
 		/// Path: `/v2/gameCenterAchievements/{id}/relationships/versions`
 		public let path: String
 
-		public func get(limit: Int? = nil) -> Request<AppStoreConnect_Swift_SDK.GameCenterAchievementV2VersionsLinkagesResponse> {
+		public func get(limit: Int? = nil) -> Request<ASC.GameCenterAchievementV2VersionsLinkagesResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(limit), id: "gameCenterAchievementsV2_versions_getToManyRelationship")
 		}
 

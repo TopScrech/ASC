@@ -11,28 +11,34 @@ import FoundationNetworking
 #endif
 
 /// An Authenticator for URL Requests which makes use of the RequestAdapter from Alamofire.
-final class JWTRequestsAuthenticator {
+// The lock protects both the cached token and the replaceable token creator
+final class JWTRequestsAuthenticator: @unchecked Sendable {
 
-    private let dispatchQueue = DispatchQueue(label: "JWTRequestsAuthenticator")
+    private let lock = NSLock()
     private var cachedToken: JWT.Token?
     private let apiConfiguration: APIConfiguration
 
     /// The JWT Creator to use for creating the JWT token. Can be overriden for test use cases.
-    var jwtCreator: JWTCreatable
+    private var storedJWTCreator: JWTCreatable
+
+    var jwtCreator: JWTCreatable {
+        get { lock.withLock { storedJWTCreator } }
+        set { lock.withLock { storedJWTCreator = newValue } }
+    }
 
     init(apiConfiguration: APIConfiguration) {
         self.apiConfiguration = apiConfiguration
-        self.jwtCreator = JWT(keyIdentifier: apiConfiguration.privateKeyID, issuerIdentifier: apiConfiguration.issuerID, expireDuration: apiConfiguration.expirationDuration)
+        self.storedJWTCreator = JWT(keyIdentifier: apiConfiguration.privateKeyID, issuerIdentifier: apiConfiguration.issuerID, expireDuration: apiConfiguration.expirationDuration)
     }
 
     /// Generates a new JWT Token, but only if the in memory cached one is not expired.
     private func createToken() throws -> JWT.Token {
-        return try dispatchQueue.sync {
+        return try lock.withLock {
             if let cachedToken = cachedToken, !cachedToken.isExpired {
                 return cachedToken
             }
 
-            let token = try jwtCreator.signedToken(using: apiConfiguration.privateKey)
+            let token = try storedJWTCreator.signedToken(using: apiConfiguration.privateKey)
             cachedToken = token
             return token
         }

@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppStoreReviewAttachments {
 		/// Path: `/v1/appStoreReviewAttachments/{id}`
 		public let path: String
 
-		public func get(parameters: GetParameters? = nil) -> Request<AppStoreConnect_Swift_SDK.AppStoreReviewAttachmentResponse> {
+		public func get(parameters: GetParameters? = nil) -> Request<ASC.AppStoreReviewAttachmentResponse> {
 			Request(path: path, method: "GET", query: parameters?.asQuery, id: "appStoreReviewAttachments_getInstance")
 		}
 
@@ -63,7 +63,7 @@ extension APIEndpoint.V1.AppStoreReviewAttachments {
 			}
 		}
 
-		public func patch(_ body: AppStoreConnect_Swift_SDK.AppStoreReviewAttachmentUpdateRequest) -> Request<AppStoreConnect_Swift_SDK.AppStoreReviewAttachmentResponse> {
+		public func patch(_ body: ASC.AppStoreReviewAttachmentUpdateRequest) -> Request<ASC.AppStoreReviewAttachmentResponse> {
 			Request(path: path, method: "PATCH", body: body, id: "appStoreReviewAttachments_updateInstance")
 		}
 

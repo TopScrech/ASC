@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppInfos.WithID.Relationships {
 		/// Path: `/v1/appInfos/{id}/relationships/primarySubcategoryOne`
 		public let path: String
 
-		public var get: Request<AppStoreConnect_Swift_SDK.AppInfoPrimarySubcategoryOneLinkageResponse> {
+		public var get: Request<ASC.AppInfoPrimarySubcategoryOneLinkageResponse> {
 			Request(path: path, method: "GET", id: "appInfos_primarySubcategoryOne_getToOneRelationship")
 		}
 	}

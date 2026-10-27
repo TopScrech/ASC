@@ -13,7 +13,7 @@ extension APIEndpoint.V1.AppInfos.WithID {
 		/// Path: `/v1/appInfos/{id}/ageRatingDeclaration`
 		public let path: String
 
-		public func get(fieldsAgeRatingDeclarations: [FieldsAgeRatingDeclarations]? = nil) -> Request<AppStoreConnect_Swift_SDK.AgeRatingDeclarationResponse> {
+		public func get(fieldsAgeRatingDeclarations: [FieldsAgeRatingDeclarations]? = nil) -> Request<ASC.AgeRatingDeclarationResponse> {
 			Request(path: path, method: "GET", query: makeGetQuery(fieldsAgeRatingDeclarations), id: "appInfos_ageRatingDeclaration_getToOneRelated")
 		}
 

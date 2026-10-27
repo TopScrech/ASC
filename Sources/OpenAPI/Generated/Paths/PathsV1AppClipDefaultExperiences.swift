@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/appClipDefaultExperiences`
 		public let path: String
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.AppClipDefaultExperienceCreateRequest) -> Request<AppStoreConnect_Swift_SDK.AppClipDefaultExperienceResponse> {
+		public func post(_ body: ASC.AppClipDefaultExperienceCreateRequest) -> Request<ASC.AppClipDefaultExperienceResponse> {
 			Request(path: path, method: "POST", body: body, id: "appClipDefaultExperiences_createInstance")
 		}
 	}

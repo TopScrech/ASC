@@ -13,7 +13,7 @@ extension APIEndpoint.V1 {
 		/// Path: `/v1/nominations`
 		public let path: String
 
-		public func get(parameters: GetParameters) -> Request<AppStoreConnect_Swift_SDK.NominationsResponse> {
+		public func get(parameters: GetParameters) -> Request<ASC.NominationsResponse> {
 			Request(path: path, method: "GET", query: parameters.asQuery, id: "nominations_getCollection")
 		}
 
@@ -218,7 +218,7 @@ extension APIEndpoint.V1 {
 			}
 		}
 
-		public func post(_ body: AppStoreConnect_Swift_SDK.NominationCreateRequest) -> Request<AppStoreConnect_Swift_SDK.NominationResponse> {
+		public func post(_ body: ASC.NominationCreateRequest) -> Request<ASC.NominationResponse> {
 			Request(path: path, method: "POST", body: body, id: "nominations_createInstance")
 		}
 	}
